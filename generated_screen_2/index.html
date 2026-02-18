@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ivyco | Luxury Beauty &amp; Mood Quiz</title>
+<!-- Tailwind CSS v3 CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Playfair Display for Serifs and Inter for Sans-serif -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivyCream: '#F9F8F3',
+            ivyZinc: '#3F3F46',
+            ivyGold: '#C5A059',
+            ivyPaper: '#F4F4F1'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="typography-and-base">
+    body {
+      background-color: #F9F8F3; /* ivyCream */
+      color: #3F3F46; /* ivyZinc */
+      -webkit-font-smoothing: antialiased;
+    }
+    .hero-heading {
+      line-height: 1.1;
+    }
+    .nav-link {
+      letter-spacing: 0.1em;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #C5A059; /* ivyGold */
+    }
+  </style>
+</head>
+<body class="min-h-screen overflow-x-hidden">
+<!-- BEGIN: MainHeader -->
+<header class="w-full fixed top-0 left-0 z-50 bg-ivyCream/80 backdrop-blur-sm border-b border-ivyZinc/5" data-purpose="top-navigation">
+<nav class="max-w-[1440px] mx-auto px-12 h-24 flex items-center justify-between">
+<!-- Brand Logo -->
+<div class="flex-1">
+<a class="text-2xl font-serif tracking-[0.2em] font-bold uppercase" href="#">Ivyco</a>
+</div>
+<!-- Navigation Links -->
+<div class="flex-[2] flex justify-center space-x-12">
+<a class="nav-link text-[10px] uppercase font-sans font-medium" href="#">Colecciones</a>
+<a class="nav-link text-[10px] uppercase font-sans font-medium" href="#">Tecnología</a>
+<a class="nav-link text-[10px] uppercase font-sans font-medium" href="#">Nuestra Historia</a>
+</div>
+<!-- Utility Links -->
+<div class="flex-1 flex justify-end">
+<a class="nav-link text-[10px] uppercase font-sans font-medium" href="#">Cuenta</a>
+</div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="pt-24 min-h-screen flex items-center justify-center" data-purpose="hero-layout">
+<section class="max-w-[1440px] w-full mx-auto grid grid-cols-12 gap-0 min-h-[85vh]">
+<!-- Left Column: Hero Image -->
+<div class="col-span-12 lg:col-span-6 relative overflow-hidden flex items-center justify-center p-12 lg:p-0">
+<!-- Image container with subtle margin for editorial feel -->
+<div class="w-full h-full lg:pl-12 lg:py-12">
+<div class="w-full h-full bg-ivyPaper overflow-hidden">
+<img alt="Modelo Ivyco con maquillaje sofisticado y natural" class="w-full h-full object-cover object-center grayscale-[20%] transition-transform duration-1000 hover:scale-105" data-purpose="hero-visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx-BD0pOFUXc_u5OEq6veeNLRXmhfQZ0K7TLPvnOWtikRwYYOTINfRdV5Ik4lj9-j5Wnxta1KgSsowKEf1bzgfM-ZR7g7lTnwECPztPderFPrdIb6kfIWH53aXOv9XZu9qPPHotO7YeGMsLMzUuaV2riNMvzon36wqrB2SBYQiCMNO55F-Bdh2TStxiq_E2Hl-dhAMA5dpyiGzxiJin7Xdz3Xto2bnKcDjBJxIfX90q7LdVQhUQMX9kjEtWEvNZrHx0burKhFW8Ps"/>
+</div>
+</div>
+</div>
+<!-- Right Column: Content -->
+<div class="col-span-12 lg:col-span-6 flex flex-col justify-center px-12 lg:px-24 py-12 lg:py-0">
+<!-- Content wrapper -->
+<div class="max-w-md">
+<span class="text-ivyGold uppercase tracking-widest text-xs font-sans font-medium mb-6 block" data-purpose="eyebrow-text">
+            Rituales de Bienestar
+          </span>
+<h1 class="hero-heading text-6xl lg:text-7xl font-serif italic mb-8" data-purpose="main-title">
+            Ivy Mood Quiz
+          </h1>
+<p class="text-lg lg:text-xl font-sans font-light leading-relaxed mb-12 text-ivyZinc/80" data-purpose="description">
+            Personaliza tu ritual diario basándote en tu energía actual. Descubre la sinergia perfecta entre ciencia y serenidad diseñada exclusivamente para ti.
+          </p>
+<div class="flex flex-col space-y-4">
+<!-- Main CTA Button -->
+<button class="bg-ivyZinc text-white py-5 px-10 text-xs uppercase tracking-widest font-sans font-medium hover:bg-ivyGold transition-colors duration-500 w-fit" data-purpose="primary-action">
+              Comenzar Experiencia
+            </button>
+<p class="text-[10px] text-ivyZinc/40 italic font-serif">
+              Toma menos de 3 minutos completar
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- END: HeroSection -->
+<!-- BEGIN: FooterSubtle -->
+<footer class="w-full bg-ivyCream py-12 px-12 border-t border-ivyZinc/5" data-purpose="page-footer">
+<div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-ivyZinc/50 font-sans">
+<p>© 2024 Ivyco Silent Luxury. Todos los derechos reservados.</p>
+<div class="flex space-x-8 mt-4 lg:mt-0">
+<a class="hover:text-ivyGold transition-colors" href="#">Privacidad</a>
+<a class="hover:text-ivyGold transition-colors" href="#">Sostenibilidad</a>
+<a class="hover:text-ivyGold transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+<!-- END: FooterSubtle -->
+</body></html>

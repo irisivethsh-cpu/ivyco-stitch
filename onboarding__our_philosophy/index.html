@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding - Our Philosophy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#16439c",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "cream-soft": "#f9f8f6", // Custom for silent luxury vibe
+                        "matte-black": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Smooth fade in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display antialiased bg-background-light dark:bg-background-dark text-[#0e121b] dark:text-white">
+<div class="relative flex h-screen w-full flex-col overflow-hidden bg-[#f9f8f6] dark:bg-background-dark transition-colors duration-300">
+<!-- Top Navigation / Skip -->
+<div class="absolute top-0 w-full z-10 px-6 pt-12 pb-4 flex justify-end items-center">
+<button class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary transition-colors">
+                Omitir
+            </button>
+</div>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col items-center justify-center w-full px-6 relative z-0">
+<!-- Hero Illustration Container -->
+<div class="w-full max-w-sm aspect-[4/5] relative mb-8 flex items-center justify-center animate-fade-in">
+<!-- Abstract minimalist mirror shape composition -->
+<div class="relative w-64 h-80 rounded-[100px] border border-stone-200 dark:border-stone-700 overflow-hidden bg-white/50 dark:bg-white/5 shadow-[0_20px_40px_-12px_rgba(0,0,0,0.05)] backdrop-blur-sm">
+<!-- Reflection Gradient -->
+<div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-white/10 dark:via-white/5 pointer-events-none"></div>
+<!-- Inner Image -->
+<div class="w-full h-full bg-cover bg-center opacity-90" data-alt="Minimalist artistic reflection in a mirror frame, soft lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBIfKt9j1shPsb8vdeLW1JTny0U2gznNhnqKTxu75Nor9wIEVwR9RITGbBPYkKz0Bkv4Bd_qVheci_gVs7PoSeFpLA3_6P8nBGhWNZZdfBQNRStPpm2PaFu-wOjJjJn1B3eKwd7YB0_Jj3B-7VZSGlmHkH7Vk3xskyFyjLpoNeux2-yTAYCtkE_jPJG8QDJG-NgJ3vJh8wfVmzBB-HGxtFMuRSBR49wgH4y4elOxD4Px4kElUPFpt41XSCbmgO9bKjVcJXg765H2o');">
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -right-4 top-20 w-12 h-12 rounded-full border border-primary/20 bg-transparent"></div>
+<div class="absolute -left-2 bottom-20 w-6 h-6 rounded-full bg-primary/10"></div>
+</div>
+<!-- Text Content -->
+<div class="w-full max-w-xs text-center space-y-4 animate-fade-in delay-100">
+<h1 class="text-3xl font-light tracking-wide text-gray-900 dark:text-white leading-tight">
+                    Lujo Silencioso.<br/>
+<span class="font-semibold text-primary/90 dark:text-primary">Belleza Elevada.</span>
+</h1>
+<p class="text-base font-normal text-gray-500 dark:text-gray-400 leading-relaxed px-2">
+                    No seguimos tendencias, creamos básicos elevados que perduran en tu historia.
+                </p>
+</div>
+</div>
+<!-- Bottom Controls -->
+<div class="w-full px-6 pb-10 pt-4 bg-[#f9f8f6] dark:bg-background-dark z-10 flex flex-col gap-8 animate-fade-in delay-200">
+<!-- Progress Indicator (Step 2 of 3) -->
+<div class="flex flex-row items-center justify-center gap-2">
+<div class="h-1.5 w-1.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-all duration-300"></div>
+<div class="h-1.5 w-8 rounded-full bg-primary dark:bg-primary transition-all duration-300"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-all duration-300"></div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-14 bg-matte-black dark:bg-white text-white dark:text-black rounded-xl font-medium text-lg tracking-wide hover:opacity-90 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-black/5 dark:shadow-white/5 flex items-center justify-center group">
+<span>Siguiente</span>
+<span class="material-symbols-outlined ml-2 text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

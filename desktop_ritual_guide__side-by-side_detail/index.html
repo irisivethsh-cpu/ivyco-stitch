@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO - Product Detail</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#17cf54",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112116",
+                        "ivy-black": "#0e1b12",
+                        "ivy-cream": "#f3f0eb",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        /* Custom scrollbar hiding for horizontal scroll areas */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-ivy-black dark:text-background-light antialiased selection:bg-primary/30">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-24">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 flex items-center bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md px-4 py-3 justify-between border-b border-black/5 dark:border-white/5 transition-all duration-300">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors group">
+<span class="material-symbols-outlined text-2xl text-ivy-black dark:text-white group-active:scale-90 transition-transform">menu</span>
+</button>
+<h2 class="text-ivy-black dark:text-white text-xl font-medium tracking-tight flex-1 text-center font-display italic">IVYCO</h2>
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors group relative">
+<span class="material-symbols-outlined text-2xl text-ivy-black dark:text-white group-active:scale-90 transition-transform">shopping_bag</span>
+<span class="absolute top-2 right-2 flex size-2 bg-primary rounded-full"></span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex flex-col flex-1">
+<!-- Hero Product Image -->
+<!-- Using aspect-[4/5] for a tall, mobile-friendly luxury portrait feel -->
+<div class="w-full relative aspect-[4/5] bg-ivy-cream dark:bg-[#1a2e22] overflow-hidden">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-700 hover:scale-105" data-alt="Elegant beige hair styling tool lying on a soft cream surface with natural light shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdfx5kcrt2JIJ21-JJ9kIUkce9Pda9xbJrC3y5KC0wdUIvg_l7fSFQ_P0KXTrmMK2A3eP2z22B0xsrDrcsFFupzpRLA5Sr6o-j2Hd6rfrNAwzHR6ckxGyLgnnoxf4XpdcP95WH9EXs1njjNBRXtXG2tZAlHp6hk6N5UARPWQy8AHXFTt8TiF7wUM-nDMmbQV_ZHwkMxZynz-97G4mxbiKfzk_p1REuxsWA12yKkqM3ScswXE72NcpJyubrsZrJylDLDO6Powi-_3k');">
+</div>
+<!-- Subtle Gradient Overlay for text readability at bottom edge if needed -->
+<div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background-light/20 to-transparent dark:from-background-dark/20"></div>
+</div>
+<!-- Product Info Section -->
+<div class="px-6 pt-8 pb-4 flex flex-col items-center text-center space-y-2">
+<div class="inline-flex items-center justify-center px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-bold tracking-widest uppercase mb-2">
+                    Best Seller
+                </div>
+<h1 class="text-4xl font-display font-medium text-ivy-black dark:text-white italic tracking-tight">Ivyco Heat Tool</h1>
+<p class="text-xl text-ivy-black/70 dark:text-white/70 font-display font-light">$1,799 MXN</p>
+</div>
+<!-- Divider -->
+<div class="w-16 h-[1px] bg-primary/30 mx-auto my-6"></div>
+<!-- Ritual Section Header -->
+<div class="px-6 mb-6 text-center">
+<h3 class="text-lg font-bold uppercase tracking-widest text-primary mb-2 text-[10px] font-sans">The Routine</h3>
+<h2 class="text-2xl font-display text-ivy-black dark:text-white">El Ritual Ivyco</h2>
+</div>
+<!-- Ritual Steps (Horizontal Scroll Snap) -->
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 px-6 pb-8 no-scrollbar w-full">
+<!-- Step 1 -->
+<div class="snap-center shrink-0 w-[85%] sm:w-[300px] flex flex-col bg-white dark:bg-white/5 border border-black/5 dark:border-white/5 p-6 rounded-2xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 font-display text-6xl italic group-hover:opacity-20 transition-opacity">1</div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">water_drop</span>
+<span class="text-sm font-bold uppercase tracking-wider text-ivy-black/60 dark:text-white/60">Preparar</span>
+</div>
+<p class="text-lg font-display text-ivy-black dark:text-white leading-relaxed italic">
+                        "Cleanse the canvas of your hair. Let the steam open your senses before the heat touches a single strand."
+                    </p>
+</div>
+<!-- Step 2 -->
+<div class="snap-center shrink-0 w-[85%] sm:w-[300px] flex flex-col bg-white dark:bg-white/5 border border-black/5 dark:border-white/5 p-6 rounded-2xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 font-display text-6xl italic group-hover:opacity-20 transition-opacity">2</div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">auto_fix_high</span>
+<span class="text-sm font-bold uppercase tracking-wider text-ivy-black/60 dark:text-white/60">Aplicar</span>
+</div>
+<p class="text-lg font-display text-ivy-black dark:text-white leading-relaxed italic">
+                        "Guide the tool gently. Not a battle, but a dance. Smooth strokes that honor the natural flow."
+                    </p>
+</div>
+<!-- Step 3 -->
+<div class="snap-center shrink-0 w-[85%] sm:w-[300px] flex flex-col bg-white dark:bg-white/5 border border-black/5 dark:border-white/5 p-6 rounded-2xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 font-display text-6xl italic group-hover:opacity-20 transition-opacity">3</div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">self_improvement</span>
+<span class="text-sm font-bold uppercase tracking-wider text-ivy-black/60 dark:text-white/60">Reconocer</span>
+</div>
+<p class="text-lg font-display text-ivy-black dark:text-white leading-relaxed italic">
+                        "Pause and witness the transformation. Not just the shine, but the quiet confidence that remains."
+                    </p>
+</div>
+</div>
+<!-- Additional Details Accordion (Minimal) -->
+<div class="px-6 space-y-4 mb-8">
+<details class="group border-b border-black/5 dark:border-white/5 pb-4">
+<summary class="flex items-center justify-between cursor-pointer list-none text-ivy-black dark:text-white font-sans text-sm font-medium uppercase tracking-wide">
+<span>Technical Specifications</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</span>
+</summary>
+<div class="text-ivy-black/60 dark:text-white/60 mt-4 font-display text-base italic">
+<ul class="list-disc pl-5 space-y-1">
+<li>Ionic technology for frizz reduction</li>
+<li>Ceramic heating plates</li>
+<li>Auto shut-off after 30 minutes</li>
+<li>360° swivel cord</li>
+</ul>
+</div>
+</details>
+<details class="group border-b border-black/5 dark:border-white/5 pb-4">
+<summary class="flex items-center justify-between cursor-pointer list-none text-ivy-black dark:text-white font-sans text-sm font-medium uppercase tracking-wide">
+<span>Shipping &amp; Returns</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</span>
+</summary>
+<div class="text-ivy-black/60 dark:text-white/60 mt-4 font-display text-base italic">
+                        Complimentary shipping on all orders over $1,500 MXN. Returns accepted within 30 days of purchase in original packaging.
+                    </div>
+</details>
+</div>
+</main>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-black/5 dark:border-white/5">
+<div class="max-w-md mx-auto flex gap-3">
+<button class="flex-1 bg-ivy-black dark:bg-white text-white dark:text-ivy-black h-14 rounded-lg flex items-center justify-center gap-3 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 active:scale-95">
+<span class="font-sans font-bold tracking-wide text-sm uppercase">Añadir al Ritual</span>
+<span class="h-1 w-1 rounded-full bg-primary"></span>
+<span class="font-display italic text-lg">$1,799</span>
+</button>
+<button class="size-14 shrink-0 rounded-lg border border-black/10 dark:border-white/10 flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-ivy-black dark:text-white">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

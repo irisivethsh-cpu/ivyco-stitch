@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mood Quiz Results: Soft</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "background-light": "#FAF9F6", /* Creamy off-white as requested */
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for cleaner look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-100 font-display antialiased min-h-screen flex flex-col relative overflow-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between px-6 pt-12 pb-4 z-10">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+<span class="material-symbols-outlined text-stone-800 dark:text-white" style="font-size: 24px;">arrow_back</span>
+</button>
+<span class="text-sm uppercase tracking-widest font-medium opacity-60">Tu Resultado</span>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+<span class="material-symbols-outlined text-stone-800 dark:text-white" style="font-size: 24px;">ios_share</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto no-scrollbar pb-32">
+<!-- Hero Image & Mood -->
+<div class="px-6 mb-8 relative">
+<div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-sm">
+<div class="absolute inset-0 bg-stone-200 animate-pulse" style="z-index: -1;"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Soft ethereal woman in white silk dress sunlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASlFlkgVkjgpzm0w_nV-UoNpk_1JR9s9JL9ufG4yzcLwezzn0eJD6Te5PSbpwuk_P2CrW6HMydmtSRtnm4-nh5-vM9hEy35FGB2J_nWcqG8bZmBtq4CAS3ia2F54OfbqM8ByIsq99BCwo45ivbqZoKQ5Nz6bLpTYwvxbUJFifM0Zwl5UWuKO19mNQwoUJm3FTCaxpam1aD3pSpX3ot-LSqlVlU2LIgvkccm3P9fGs3eqJRwoGZiDBGn6lGHK5bkbXrqdOy-nqteJY');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-light/80 via-transparent to-transparent dark:from-background-dark/80"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+<h1 class="text-4xl italic font-light mb-3 leading-tight text-stone-900 dark:text-white">
+                        Tu Perfil Ivyco: <br/>
+<span class="font-normal not-italic text-stone-800 dark:text-primary/90">Suave</span>
+</h1>
+</div>
+</div>
+</div>
+<!-- Description -->
+<div class="px-8 text-center mb-12">
+<p class="text-xl leading-relaxed font-light text-stone-600 dark:text-stone-300 italic">
+                "Un ritual de calma. Hoy eliges habitar tu tiempo con delicadeza."
+            </p>
+<div class="mt-6 flex justify-center">
+<div class="h-px w-16 bg-primary/40"></div>
+</div>
+</div>
+<!-- Recommendations -->
+<div class="px-6">
+<h3 class="text-sm uppercase tracking-widest mb-6 pl-1 opacity-70">Recomendados para ti</h3>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-4 -mx-6 px-6">
+<!-- Product 1 -->
+<div class="flex-none w-64 bg-white dark:bg-stone-900 rounded-xl p-3 shadow-sm border border-stone-100 dark:border-stone-800 group">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-stone-50 mb-3">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Close up of false eyelashes on white background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBMErZfq8s_MKdx011npADEGryQEKKUYm3Jylq0fUtoCGu1aE6GxREUAx8zee5ZGUP8IUB2l1ZPM8jQcJpyHOcUMD3EdwGQCztwExn-uqmsqxY_q5WgP4PvN7BUUvLIuB1re9mEgaNGfzlxFhr59tS0572ePuoAtHIl_5KNhXez4wzqM67H5L-ryj8kXjjummI38SDQg78JgxRYb-xjsGk4u57ubDcW53zj7nZH2uevW-mIlMLMFBWFQQZ8vfmX9SbDk3tpUYxcng');"></div>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h4 class="font-serif text-lg leading-tight mb-1 text-stone-900 dark:text-white">Fluffy DD Lashes</h4>
+<p class="text-xs text-stone-500 dark:text-stone-400 font-sans">Volumen Etéreo</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-stone-50 dark:bg-stone-800 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">add</span>
+</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex-none w-64 bg-white dark:bg-stone-900 rounded-xl p-3 shadow-sm border border-stone-100 dark:border-stone-800 group">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-stone-50 mb-3">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Soft bristle makeup brush on marble surface" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8_rght8kYtjyxDRbIONuiEcqSvMywJNWVcfLBlHL_ab95i2rhC_GvzpynSuLzwa2EM1UIAjZLO05EJBDMLaqz1tNP0ff575L2ANKiWOifsOi46YtQbOsffXgXqAjcfAEZCRlp-BSv9jCSrKGfbqEtheqW9VVLDvvBh4_bjRhCWZ426jCoFWMjyfun8TiHtXL4WdR9wHXDvneWsKBUET-uj37DMsaQTsKHc3cnHAmgRiD7MmBeF8QrKupJaR-mfxwjewhrtSzKC7A');"></div>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h4 class="font-serif text-lg leading-tight mb-1 text-stone-900 dark:text-white">Cepillo Suave</h4>
+<p class="text-xs text-stone-500 dark:text-stone-400 font-sans">Cerdas Naturales</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-stone-50 dark:bg-stone-800 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating AI Concierge -->
+<div class="absolute bottom-28 right-6 z-20 flex flex-col items-end gap-2 pointer-events-none">
+<div class="glass-panel px-4 py-3 rounded-2xl rounded-tr-sm shadow-sm max-w-[200px] animate-fade-in-up">
+<p class="text-sm font-sans text-stone-800 dark:text-stone-200 leading-snug">
+<span class="font-bold text-primary mr-1">Ivy:</span>
+                He preparado esto para tu calma.
+            </p>
+</div>
+<button class="pointer-events-auto w-14 h-14 rounded-full bg-stone-900 dark:bg-stone-100 shadow-lg flex items-center justify-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/20 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full"></div>
+<span class="material-symbols-outlined text-white dark:text-stone-900 relative z-10" style="font-size: 28px;">auto_awesome</span>
+<!-- Pulse ring -->
+<span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-20 animate-ping duration-[3s]"></span>
+</button>
+</div>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-6 left-6 right-6 z-30">
+<div class="glass-panel h-16 rounded-full flex items-center justify-between px-2 shadow-sm">
+<a class="flex-1 flex flex-col items-center justify-center gap-0.5 text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 24px;">home</span>
+</a>
+<a class="flex-1 flex flex-col items-center justify-center gap-0.5 text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 24px;">shopping_bag</span>
+</a>
+<!-- Active Item (Quiz/Results) -->
+<a class="flex-1 flex flex-col items-center justify-center relative" href="#">
+<div class="absolute -top-1 w-1 h-1 bg-primary rounded-full"></div>
+<span class="material-symbols-outlined text-stone-900 dark:text-white" style="font-size: 24px;">spa</span>
+</a>
+<a class="flex-1 flex flex-col items-center justify-center gap-0.5 text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 24px;">person</span>
+</a>
+</div>
+</nav>
+<!-- Background decorative blur -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+<div class="absolute -top-[20%] -right-[20%] w-[70%] h-[50%] bg-primary/5 rounded-full blur-[100px]"></div>
+<div class="absolute top-[40%] -left-[10%] w-[50%] h-[40%] bg-stone-200/40 dark:bg-stone-800/20 rounded-full blur-[80px]"></div>
+</div>
+</body></html>

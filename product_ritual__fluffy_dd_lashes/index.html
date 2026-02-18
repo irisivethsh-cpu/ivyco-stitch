@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fluffy DD Lashes Product Page</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7311d4",
+                        "background-light": "#fdfcfb", /* Slightly warmer ivory */
+                        "background-dark": "#191022",
+                        "luxury-dark": "#2d2433",
+                        "luxury-muted": "#8a8191",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean UI */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Subtle fade for the gradient overlay */
+        .fade-overlay {
+            background: linear-gradient(to top, rgba(253, 252, 251, 1) 0%, rgba(253, 252, 251, 0) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-luxury-dark antialiased selection:bg-primary/20">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl pb-24">
+<!-- Top App Bar -->
+<div class="fixed top-0 z-50 flex w-full max-w-md items-center justify-between p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md transition-all duration-300">
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-primary/5 active:bg-primary/10 transition-colors text-luxury-dark dark:text-white">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-primary/5 active:bg-primary/10 transition-colors text-luxury-dark dark:text-white">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-primary/5 active:bg-primary/10 transition-colors text-luxury-dark dark:text-white relative">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+<span class="absolute top-2 right-2 h-2 w-2 rounded-full bg-primary ring-2 ring-background-light dark:ring-background-dark"></span>
+</button>
+</div>
+</div>
+<!-- Scrollable Content -->
+<div class="flex flex-col w-full">
+<!-- Hero Image Section -->
+<div class="relative w-full h-[500px] bg-gray-100 overflow-hidden">
+<img alt="Close up high definition view of long soft eyelashes on a models face" class="h-full w-full object-cover object-center" data-alt="Close up high definition view of long soft eyelashes on a models face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUiVqkbWFCNhYPwG4ZGnaX7qSKW14mIfvc50eYt2Wxq-BnqDUKS3B3YDMMqSusXO7iS2BAKZV0aJ436gvFZGv5r6z-Iefjy8jsuKeB49iDhItGTfEpNL2_5uhQboUDegnqjUVwSDAxnFfKz7HRgAqI0K_nOhWTyODfZ2-sYLcNyuH40zFCAb-mJ-t6L7iumlszYV7uWNgeErFFLouSs0Zf_U0TW7hADJPIYgPnfZpVRhtW2WIkfrB_OddncZxdWAqsGOGxLQIMrQI"/>
+<div class="absolute bottom-0 left-0 w-full h-32 fade-overlay"></div>
+</div>
+<!-- Product Header Info -->
+<div class="px-6 -mt-8 relative z-10">
+<div class="flex flex-col gap-1 mb-2">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-sans font-semibold tracking-wider uppercase dark:text-primary/90">Premium Collection</span>
+</div>
+<div class="flex justify-between items-start">
+<h1 class="text-4xl font-display italic font-light text-luxury-dark dark:text-white leading-tight">
+                            Fluffy DD Lashes
+                        </h1>
+</div>
+</div>
+<div class="flex items-baseline gap-3 mb-4">
+<h2 class="text-2xl font-sans font-medium text-luxury-dark dark:text-white">$28.00</h2>
+<span class="text-sm font-sans text-luxury-muted line-through">$35.00</span>
+</div>
+<p class="text-base font-sans font-light text-luxury-dark/80 dark:text-white/80 leading-relaxed">
+                    Experience the ethereal texture and natural volume of our premium lashes. Designed for a gaze that speaks before you do.
+                </p>
+</div>
+<!-- Spacer -->
+<div class="h-8"></div>
+<!-- Ritual Section -->
+<div class="px-6 py-8 bg-white dark:bg-white/5 mx-4 rounded-xl shadow-sm border border-primary/5">
+<div class="text-center mb-10">
+<h3 class="text-2xl font-display font-medium text-primary dark:text-primary/80 italic mb-2">El Ritual de la Mirada</h3>
+<p class="text-xs font-sans text-luxury-muted tracking-widest uppercase">The Ritual of the Gaze</p>
+</div>
+<div class="space-y-10 relative">
+<!-- Connecting Line -->
+<div class="absolute left-[19px] top-4 bottom-4 w-[1px] bg-primary/20 dark:bg-primary/40 -z-10"></div>
+<!-- Step 1 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 size-10 rounded-full bg-background-light dark:bg-background-dark border border-primary/20 flex items-center justify-center text-primary z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">straighten</span>
+</div>
+<div class="flex flex-col pt-1">
+<span class="text-xs font-sans text-primary/70 uppercase tracking-wider mb-1">Paso 01</span>
+<h4 class="text-xl font-display font-medium text-luxury-dark dark:text-white mb-1">Medir</h4>
+<p class="text-sm font-sans text-luxury-muted leading-relaxed">
+                                Align with your natural lash line. Trim from the outer corner if needed for a bespoke fit.
+                            </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 size-10 rounded-full bg-background-light dark:bg-background-dark border border-primary/20 flex items-center justify-center text-primary z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">hourglass_empty</span>
+</div>
+<div class="flex flex-col pt-1">
+<span class="text-xs font-sans text-primary/70 uppercase tracking-wider mb-1">Paso 02</span>
+<h4 class="text-xl font-display font-medium text-luxury-dark dark:text-white mb-1">Esperar</h4>
+<p class="text-sm font-sans text-luxury-muted leading-relaxed">
+                                The '30-second breath' rule. Apply adhesive and wait until tacky before placement.
+                            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 size-10 rounded-full bg-background-light dark:bg-background-dark border border-primary/20 flex items-center justify-center text-primary z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</div>
+<div class="flex flex-col pt-1">
+<span class="text-xs font-sans text-primary/70 uppercase tracking-wider mb-1">Paso 03</span>
+<h4 class="text-xl font-display font-medium text-luxury-dark dark:text-white mb-1">Afirmar</h4>
+<p class="text-sm font-sans text-luxury-muted leading-relaxed">
+                                Blend with your natural lashes and recognize your own reflection in the mirror.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Spacer -->
+<div class="h-10"></div>
+<!-- Video Module -->
+<div class="px-6 mb-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-display font-medium text-luxury-dark dark:text-white italic">Real Life View</h3>
+<span class="text-xs font-sans text-primary/80 uppercase tracking-wider flex items-center gap-1 cursor-pointer">
+                        See Gallery <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+<div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-gray-200 shadow-inner group cursor-pointer">
+<img alt="Woman applying mascara and lashes in natural soft lighting" class="h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="Woman applying mascara and lashes in natural soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdmpZna-1NpPy6gWWsnqQe7_W5fNk35uKCgwP1Bi9xunhPsFVUfmeR_qFkRZ5cAd9KDiZzbXKKjIrcnTU-IHqzHeGQnAjfGnoC_bynwwCkgIBVL2Kg9CGEXz1P6K3L4kw72FQ2vUlqdF1T6ZU4nkTLXIMkw85bRKxE5YlRTGD5uw1XGm7SeAOi0cFt07o910qMOlE-0b_YFQYzSQEioZbk7g2br-HECMxYXQz7XVyKVblI-N5Q9bhDb2SvPzTXQ8pS4MZXyIg2eEY"/>
+<div class="absolute inset-0 bg-black/10 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+<div class="size-16 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center pl-1 shadow-lg border border-white/40 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-white text-3xl drop-shadow-md">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-white/20 backdrop-blur-md p-3 rounded-lg border border-white/20">
+<p class="text-white text-sm font-sans font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">wb_sunny</span>
+                            Natural Daylight Test
+                         </p>
+</div>
+</div>
+</div>
+<!-- Reviews Teaser -->
+<div class="px-6 pb-8 border-t border-luxury-muted/10 pt-6">
+<div class="flex items-center gap-2 mb-2">
+<div class="flex text-primary text-sm">
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star_half</span>
+</div>
+<span class="text-sm font-sans text-luxury-muted">(128 Reviews)</span>
+</div>
+<p class="text-sm font-display italic text-luxury-dark/90 dark:text-white/90">"The most comfortable lashes I've ever worn. They feel like absolutely nothing."</p>
+</div>
+<!-- Bottom spacing for fixed footer -->
+<div class="h-24"></div>
+</div>
+<!-- Sticky Footer -->
+<div class="fixed bottom-0 left-0 right-0 z-40 p-4 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-xl border-t border-luxury-muted/10 max-w-md mx-auto">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-xs text-luxury-muted font-sans uppercase tracking-wide">Total</span>
+<span class="text-xl font-sans font-semibold text-luxury-dark dark:text-white">$28.00</span>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary/90 text-white h-14 rounded-lg flex items-center justify-center gap-2 shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
+<span class="text-base font-sans font-semibold tracking-wide">Añadir a la Bolsa</span>
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

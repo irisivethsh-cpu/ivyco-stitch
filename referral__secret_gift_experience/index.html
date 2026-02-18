@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Referral: Secret Gift Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                        "zinc-800": "#27272a",
+                        "zinc-900": "#18181b",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom delicate blur for the luxury feel */
+        .glass-panel {
+            background: rgba(34, 30, 16, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #f4c025, #ffeebb, #f4c025);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% auto;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white antialiased selection:bg-primary/30">
+<div class="relative min-h-screen w-full flex flex-col items-center justify-between overflow-hidden">
+<!-- Background Layer with Blur and Overlay -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-[#1c190d]/80 z-10"></div>
+<!-- Image set to cover with a high blur to simulate depth and focus on content -->
+<div class="w-full h-full bg-cover bg-center bg-no-repeat blur-[6px] scale-105 opacity-60" data-alt="Abstract luxurious gift box with wax seal texture in dark lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBoTNjKrvGAo3Ko1NVc-IkfgWA03goTrUMHUnU1UG5L6vfs9mWH4bhn6YHaPDbSAPyKNvvxpRfgTHtv7LBdKbuPbPW7gbYXqwVKgxzxaFMT2S7itxZ1Jywv0-rNqUuW-hYKS1689TdmgKb2lDphCxZXU9qKvMhGxL3aCVw77xaDfr481Lu0AV3znyqGcP6RhzEUZI6uEgHru54m9IJOgAiztIMFG5qrNtDS5vjkEZ4rB3_KwAosO_AigJSkDDVQhF8ZxK-oqeFcrQ');">
+</div>
+<!-- Vignette for focus -->
+<div class="absolute inset-0 bg-gradient-to-b from-[#221e10]/60 via-transparent to-[#221e10] z-20"></div>
+</div>
+<!-- Header -->
+<header class="relative z-30 w-full flex items-center justify-between p-6 pt-12">
+<button class="flex size-10 items-center justify-center rounded-full bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 transition-colors border border-white/10">
+<span class="material-symbols-outlined text-xl">arrow_back</span>
+</button>
+<div class="text-xs tracking-[0.2em] uppercase text-white/60 font-medium">Ivyco Rituals</div>
+<button class="flex size-10 items-center justify-center rounded-full bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 transition-colors border border-white/10">
+<span class="material-symbols-outlined text-xl">more_horiz</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="relative z-30 flex-1 flex flex-col items-center justify-center px-8 w-full max-w-md mx-auto text-center gap-8">
+<!-- Icon/Symbol -->
+<div class="mb-2">
+<span class="material-symbols-outlined text-primary text-5xl opacity-80 font-light">card_giftcard</span>
+</div>
+<!-- Typography Block -->
+<div class="space-y-4">
+<h1 class="text-3xl md:text-4xl italic font-light tracking-wide text-white leading-tight">
+                    Compartir <br/>
+<span class="not-italic font-normal">la Esencia</span>
+</h1>
+<div class="w-12 h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto my-4"></div>
+<p class="text-white/80 text-sm md:text-base font-light leading-relaxed max-w-[280px] mx-auto">
+                    Invita a una mujer de tu círculo y ambas recibirán un regalo invisible en su próximo ritual.
+                </p>
+</div>
+<!-- Referral Code Box -->
+<div class="w-full mt-4">
+<label class="block text-[10px] tracking-[0.15em] uppercase text-primary/70 mb-2 font-medium">Tu Código Exclusivo</label>
+<div class="group relative flex items-center justify-between w-full p-4 border border-primary/30 rounded-lg bg-[#2a261a]/40 backdrop-blur-md hover:border-primary/50 transition-all cursor-pointer">
+<div class="flex-1 text-center font-display text-xl tracking-widest text-primary font-medium">
+                        IVY-8821-X
+                    </div>
+<div class="absolute right-4 text-primary/60 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">content_copy</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Actions -->
+<footer class="relative z-30 w-full px-6 pb-10 pt-4 max-w-md mx-auto flex flex-col gap-4">
+<!-- Primary Action -->
+<button class="w-full py-4 px-6 rounded-lg bg-primary text-[#231e10] font-medium text-sm tracking-wide hover:bg-[#dcb028] transition-colors shadow-[0_0_15px_rgba(244,192,37,0.15)] flex items-center justify-center gap-2 group">
+<span>Compartir Enlace Secreto</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</button>
+<!-- Secondary Action -->
+<button class="w-full py-4 px-6 rounded-lg border border-white/20 text-white/90 font-medium text-sm tracking-wide hover:bg-white/5 transition-colors flex items-center justify-center">
+                Enviar Invitación Personal
+            </button>
+<!-- Gift Tracker -->
+<div class="mt-4 flex items-center justify-center gap-2 text-xs tracking-wider text-primary/80 border-t border-white/5 pt-6 w-full">
+<span class="material-symbols-outlined text-sm animate-pulse">auto_awesome</span>
+<span>REGALOS PENDIENTES: 1</span>
+</div>
+</footer>
+</div>
+</body></html>

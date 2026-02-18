@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO | Belleza Elevada</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivy: {
+              cream: '#F9F8F6',
+              zinc: '#27272A',
+              beige: '#E5E1DA',
+              soft: '#A1A1AA'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles -->
+<style data-purpose="typography">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F9F8F6;
+      color: #27272A;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .letter-spacing-widest {
+      letter-spacing: 0.2em;
+    }
+  </style>
+<style data-purpose="animations">
+    .fade-in {
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-ivy-cream/80 backdrop-blur-md border-b border-zinc-100" data-purpose="main-navigation">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Mobile Menu Button -->
+<button aria-label="Toggle Menu" class="lg:hidden p-2" id="mobile-menu-btn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+<!-- Desktop Nav Left -->
+<div class="hidden lg:flex space-x-8 text-xs uppercase tracking-widest font-medium">
+<a class="hover:text-ivy-soft transition-colors" href="#">Colecciones</a>
+<a class="hover:text-ivy-soft transition-colors" href="#">Tecnología</a>
+</div>
+<!-- Logo -->
+<div class="absolute left-1/2 -translate-x-1/2 text-2xl tracking-[0.3em] font-light">
+<a href="/">IVYCO</a>
+</div>
+<!-- Desktop Nav Right -->
+<div class="hidden lg:flex space-x-8 text-xs uppercase tracking-widest font-medium">
+<a class="hover:text-ivy-soft transition-colors" href="#">Nuestra Historia</a>
+<a class="hover:text-ivy-soft transition-colors" href="#">Cuenta</a>
+</div>
+<!-- Mobile Spacer/Icon -->
+<div class="lg:hidden w-6"></div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
+<main class="pt-20">
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden" data-purpose="hero-section">
+<!-- Background / Split Layout for Desktop -->
+<div class="absolute inset-0 flex flex-col lg:flex-row">
+<!-- Text Side (Hero) -->
+<div class="w-full lg:w-1/2 bg-ivy-cream flex items-center justify-center p-8 lg:p-20">
+<div class="text-center lg:text-left max-w-md fade-in">
+<span class="text-[10px] uppercase tracking-[0.4em] text-ivy-soft mb-6 block">Silent Luxury Haircare</span>
+<h1 class="text-5xl lg:text-7xl mb-8 leading-tight font-normal">BELLEZA ELEVADA</h1>
+<p class="text-ivy-zinc/70 text-sm lg:text-base leading-relaxed mb-10 font-light max-w-sm mx-auto lg:mx-0">
+              Redefiniendo el cuidado capilar con tecnología térmica avanzada y diseño minimalista.
+            </p>
+<a class="inline-block px-10 py-5 bg-ivy-zinc text-white text-[10px] uppercase tracking-[0.3em] hover:bg-zinc-800 transition-all" href="#quiz">
+              COMENZAR EXPERIENCIA
+            </a>
+</div>
+</div>
+<!-- Image Side -->
+<div class="w-full lg:w-1/2 h-[50vh] lg:h-auto bg-ivy-beige relative">
+<img alt="Minimalist Hair Detail" class="w-full h-full object-cover grayscale-[20%] opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBFZ7kLCRRB-oQTakWhSXZTQuDJTcu_vTCG7q_EWqb6GdTviaPoxCsbaT_DxApxPXZBDCyGlsFCYX6s9TcxZoZd39DHQiTetIvXBEUAAb_tcRhBm_GBI2IZ_jE9J010Tt4k6AXh739q29yDEkn9FlczkCV1AWmEEPtgUXo5dF5wi_TLgw-7ro23UkSSbdbRMxej4KSsCZfp5ol9G9NtcHbBiqwqbWEzBuP3u0bpfRZ0pFoGlE5WVlM9WFJlJKPT6QOUwaJJW7oKXw"/>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Ivy Mood Quiz Section -->
+<section class="py-24 lg:py-40 bg-white" data-purpose="mood-quiz" id="quiz">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<!-- Image Content (Artistic Tool Visual) -->
+<div class="order-2 lg:order-1 relative group">
+<div class="aspect-[4/5] bg-ivy-cream overflow-hidden">
+<img alt="Ivyco Technology" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbb-CBlrj1UZv2JNgIgz30slEu-_zz0CLNHN4jbqBnEt-cm6xokXvog8ac91h5cA3MhksSlxXThqSxceyR86B2slwpn3cUYl8bY9mOuRPGU0J55wxW-lcLHOaDmtVIU8uX18m87fg51ma8Z7QONOzT411UStQqmKmv66t8tzn7ZdtaqE73jtdP4t1YrIVZIHon2kQLbV-Xxw5eWyKkqwy-qZ629tUcxXOAf6RKiVbIlIJfNi1rSnmfJwjtlLKP6IX2XM4EHcw-v0I"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-ivy-beige/30 -z-10 hidden lg:block"></div>
+</div>
+<!-- Text Content -->
+<div class="order-1 lg:order-2 space-y-8">
+<h2 class="text-4xl lg:text-5xl leading-snug">Encuentra tu ritual ideal.</h2>
+<p class="text-ivy-zinc/60 leading-loose font-light">
+              Personaliza tu experiencia Ivyco. Nuestra tecnología se adapta a la textura única de tu cabello, 
+              preservando la integridad de la fibra capilar mientras esculpe el acabado perfecto.
+            </p>
+<div class="pt-6">
+<button class="border-b border-ivy-zinc pb-2 text-[11px] uppercase tracking-[0.2em] font-medium hover:text-ivy-soft hover:border-ivy-soft transition-all">
+                Tomar el Ivy Mood Quiz
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Ivy Mood Quiz Section -->
+<!-- BEGIN: Product Philosophy -->
+<section class="py-24 bg-ivy-cream border-t border-zinc-100" data-purpose="philosophy">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<p class="italic text-xl lg:text-2xl font-serif text-ivy-zinc/80 mb-10">
+          "La verdadera sofisticación reside en la simplicidad y el respeto por la forma natural."
+        </p>
+<div class="w-12 h-px bg-ivy-zinc/20 mx-auto"></div>
+</div>
+</section>
+<!-- END: Product Philosophy -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-ivy-zinc text-white pt-20 pb-10" data-purpose="main-footer">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<!-- Brand Info -->
+<div class="md:col-span-1">
+<div class="text-xl tracking-[0.4em] font-light mb-8">IVYCO</div>
+<p class="text-ivy-soft text-xs leading-relaxed max-w-xs">
+            Londres • Madrid • New York<br/>
+            Definiendo el futuro del lujo capilar.
+          </p>
+</div>
+<!-- Links -->
+<div class="text-xs uppercase tracking-widest space-y-4">
+<h4 class="text-white/40 mb-6">Explorar</h4>
+<a class="block hover:text-ivy-soft" href="#">Tienda</a>
+<a class="block hover:text-ivy-soft" href="#">Suscripción</a>
+<a class="block hover:text-ivy-soft" href="#">Profesionales</a>
+</div>
+<div class="text-xs uppercase tracking-widest space-y-4">
+<h4 class="text-white/40 mb-6">Soporte</h4>
+<a class="block hover:text-ivy-soft" href="#">Contacto</a>
+<a class="block hover:text-ivy-soft" href="#">Envío</a>
+<a class="block hover:text-ivy-soft" href="#">Garantía</a>
+</div>
+<!-- Social -->
+<div class="text-xs uppercase tracking-widest space-y-4">
+<h4 class="text-white/40 mb-6">Síguenos</h4>
+<div class="flex space-x-6">
+<a class="hover:text-ivy-soft" href="#">Instagram</a>
+<a class="hover:text-ivy-soft" href="#">Pinterest</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-ivy-soft uppercase tracking-widest">© 2024 IVYCO BEAUTY. TODOS LOS DERECHOS RESERVADOS.</p>
+<div class="flex space-x-6 text-[10px] text-ivy-soft uppercase tracking-widest">
+<a href="#">Privacidad</a>
+<a href="#">Términos</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Mobile Menu Overlay (Hidden by Default) -->
+<div class="fixed inset-0 bg-ivy-cream z-[60] flex flex-col items-center justify-center space-y-8 opacity-0 pointer-events-none transition-opacity duration-300" id="mobile-overlay">
+<button class="absolute top-6 right-6 p-2" id="close-menu">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+<a class="text-2xl font-serif" href="#">Colecciones</a>
+<a class="text-2xl font-serif" href="#">Tecnología</a>
+<a class="text-2xl font-serif" href="#">Nuestra Historia</a>
+<a class="text-2xl font-serif" href="#">Cuenta</a>
+</div>
+<!-- END: Mobile Menu Overlay -->
+<script data-purpose="mobile-nav-handlers">
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    menuBtn.addEventListener('click', () => {
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+    });
+  </script>
+</body></html>

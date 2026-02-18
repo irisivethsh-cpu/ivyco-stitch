@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Ivyco Bag</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c11010",
+                        "background-light": "#fcfcfc", // Slightly off-white for luxury feel
+                        "background-dark": "#1a1a1a",
+                        "surface-light": "#f5f5f5",
+                        "surface-dark": "#262626",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem", // Sharp but not harsh
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "9999px",
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e5e5e5;
+            border-radius: 2px;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100 min-h-screen flex justify-center">
+<!-- Mobile Container -->
+<div class="w-full max-w-md bg-white dark:bg-background-dark shadow-2xl min-h-screen flex flex-col relative overflow-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between px-6 py-5 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-10 border-b border-gray-100 dark:border-gray-800">
+<button class="flex items-center justify-center p-2 -ml-2 text-gray-800 dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-[24px]">close</span>
+</button>
+<h1 class="text-base font-medium tracking-wide text-center uppercase text-gray-900 dark:text-white">Your Ivyco Bag <span class="text-gray-400 dark:text-gray-500 text-sm ml-1">(2)</span></h1>
+<button class="text-xs font-medium tracking-widest uppercase text-gray-500 dark:text-gray-400 hover:text-primary transition-colors">Help</button>
+</header>
+<!-- Main Content (Scrollable) -->
+<main class="flex-1 overflow-y-auto pb-32">
+<!-- Product List -->
+<div class="flex flex-col">
+<!-- Product 1 -->
+<div class="group relative flex gap-5 px-6 py-8 border-b border-gray-100 dark:border-gray-800 transition-colors hover:bg-surface-light/30 dark:hover:bg-surface-dark/30">
+<div class="relative shrink-0 w-24 h-24 bg-surface-light dark:bg-surface-dark rounded-sm overflow-hidden">
+<img alt="Sleek black hair styling tool on minimal background" class="w-full h-full object-cover opacity-90 mix-blend-multiply dark:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuaFNrO5oFREUxrYxywyPUe4hqPQ1abPm9tyje7VegqmPQwxRMIjakW3_otCC4DwNGIVdkerIQ4Aa98b3O_NfXNbsvdgIPfBpMoq4E_eRsomXBSAuFpP7bxKlkuQegiSZRRfRYvIjw-XxGZTw0X_xHid3jsYzbhUbbX8XLQk_dnkgCF4gndCcZx4VWKKvC38_fa2429tEhlOrSHo1VCmS-LB23tnRL_Sn3GIvMhPpXEPh1wvhxBNCAjHmv1xZNB-fvIO0wX9AbvX8"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-1">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-medium text-gray-900 dark:text-white tracking-tight leading-snug">The Precision Styler</h3>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-light mt-1">Matte Black Edition</p>
+</div>
+<div class="flex items-end justify-between mt-3">
+<div class="flex items-center border border-gray-200 dark:border-gray-700 rounded-sm">
+<button class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined !text-[16px]">remove</span>
+</button>
+<span class="text-sm font-medium w-6 text-center text-gray-900 dark:text-white">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined !text-[16px]">add</span>
+</button>
+</div>
+<p class="text-lg font-medium text-gray-900 dark:text-white">$250.00</p>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group relative flex gap-5 px-6 py-8 border-b border-gray-100 dark:border-gray-800 transition-colors hover:bg-surface-light/30 dark:hover:bg-surface-dark/30">
+<div class="relative shrink-0 w-24 h-24 bg-surface-light dark:bg-surface-dark rounded-sm overflow-hidden">
+<img alt="Minimalist cosmetic packaging box" class="w-full h-full object-cover opacity-90 mix-blend-multiply dark:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEHDCsOXaxRwXBMKU-pzhVaTHlk5I2z0qSg_ndolYMWIaIkGT18_zvdvvvHSP92uzfWK51YvqXM-UNgEX6gVduooWEaaaAGrkDwrW-48FzK0U4hdqLRNHOY5QbuOc1K0CS6MT6vdeT0AKpPLcyFauMLk50o4Vnn6M8Ytl7shdAZrMw8Fzclw0EWavZfM02WFWIrC5gFAihj6asEJIsaWdSUxrcZM8JdhLYLZL7DpeTtBMlzuFPW3wwazx_ob2WcK1kT3B5JFGvNLA"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-1">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-medium text-gray-900 dark:text-white tracking-tight leading-snug">Velvet Lash Set</h3>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-light mt-1">Volume II</p>
+</div>
+<div class="flex items-end justify-between mt-3">
+<div class="flex items-center border border-gray-200 dark:border-gray-700 rounded-sm">
+<button class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined !text-[16px]">remove</span>
+</button>
+<span class="text-sm font-medium w-6 text-center text-gray-900 dark:text-white">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined !text-[16px]">add</span>
+</button>
+</div>
+<p class="text-lg font-medium text-gray-900 dark:text-white">$45.00</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Confidence Bar -->
+<div class="px-6 py-10 bg-surface-light/40 dark:bg-surface-dark/20">
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col items-center text-center gap-2 group cursor-pointer">
+<div class="p-3 bg-white dark:bg-gray-800 rounded-full shadow-sm text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-[20px]">local_shipping</span>
+</div>
+<span class="text-[10px] uppercase tracking-wider font-semibold text-gray-600 dark:text-gray-400 group-hover:text-primary transition-colors">Envío<br/>Prioritario</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2 group cursor-pointer">
+<div class="p-3 bg-white dark:bg-gray-800 rounded-full shadow-sm text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-[20px]">verified_user</span>
+</div>
+<span class="text-[10px] uppercase tracking-wider font-semibold text-gray-600 dark:text-gray-400 group-hover:text-primary transition-colors">Compra<br/>Protegida</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2 group cursor-pointer">
+<div class="p-3 bg-white dark:bg-gray-800 rounded-full shadow-sm text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-[20px]">hotel_class</span>
+</div>
+<span class="text-[10px] uppercase tracking-wider font-semibold text-gray-600 dark:text-gray-400 group-hover:text-primary transition-colors">Calidad<br/>Certificada</span>
+</div>
+</div>
+</div>
+<!-- Summary -->
+<div class="px-6 py-6 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-500 dark:text-gray-400 font-light">Subtotal</span>
+<span class="font-medium text-gray-900 dark:text-white">$295.00</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-500 dark:text-gray-400 font-light">Shipping</span>
+<span class="text-gray-900 dark:text-white font-medium">Free</span>
+</div>
+<div class="h-px bg-gray-100 dark:bg-gray-800 my-2"></div>
+<div class="flex justify-between items-center text-base">
+<span class="text-gray-900 dark:text-white font-medium">Total</span>
+<span class="font-bold text-gray-900 dark:text-white text-lg">$295.00</span>
+</div>
+</div>
+</main>
+<!-- Fixed Footer CTA -->
+<div class="absolute bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-gray-100 dark:border-gray-800 px-6 pt-4 pb-8 z-20">
+<div class="flex flex-col items-center gap-4">
+<div class="flex items-center gap-2 text-primary/80 dark:text-primary/90">
+<span class="material-symbols-outlined !text-[16px]">redeem</span>
+<p class="text-xs font-serif italic tracking-wide">Included: The Signature Ivyco Unboxing Ritual.</p>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-sm shadow-lg shadow-primary/20 active:scale-[0.99] transition-transform flex items-center justify-between px-6 group hover:bg-red-800">
+<span class="text-sm font-semibold tracking-wide uppercase">Finalizar Compra</span>
+<span class="text-sm font-medium opacity-90 group-hover:opacity-100">$295.00</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

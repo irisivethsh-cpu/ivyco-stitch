@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secret Drop Invitation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "primary-dim": "#b38c1b",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                        "surface-dark": "#18181b",
+                        "zinc-850": "#202023",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "md": "0.375rem",
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom Sparkle Effect */
+        .sparkle-bg {
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+                radial-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1) 2px, transparent 3px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            background-position: 0 0, 40px 60px, 130px 270px;
+        }
+        
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(30, 30, 35, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-zinc-900 font-display antialiased overflow-hidden h-screen w-full relative">
+<!-- Background Layer with Blur and Abstract Visuals -->
+<div class="absolute inset-0 z-0 overflow-hidden">
+<!-- Abstract blurred shapes for mood -->
+<div class="absolute top-[-10%] left-[-10%] w-[60%] h-[50%] rounded-full bg-primary/10 blur-[100px] animate-pulse-slow"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[70%] h-[60%] rounded-full bg-zinc-700/30 blur-[120px]"></div>
+<!-- Subtle sparkle overlay -->
+<div class="absolute inset-0 opacity-20 sparkle-bg animate-pulse"></div>
+<!-- Simulated App Content Behind (Blurred) -->
+<div class="w-full h-full opacity-30 blur-sm pointer-events-none flex flex-col p-4 gap-4">
+<div class="flex justify-between items-center mb-6">
+<span class="material-symbols-outlined text-zinc-500">menu</span>
+<div class="w-24 h-6 bg-zinc-800 rounded-full"></div>
+<span class="material-symbols-outlined text-zinc-500">shopping_bag</span>
+</div>
+<!-- Mock Grid -->
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] bg-zinc-800 rounded-lg"></div>
+<div class="aspect-[3/4] bg-zinc-800 rounded-lg"></div>
+<div class="aspect-[3/4] bg-zinc-800 rounded-lg"></div>
+<div class="aspect-[3/4] bg-zinc-800 rounded-lg"></div>
+</div>
+</div>
+<!-- Overlay Darkness -->
+<div class="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm z-10"></div>
+</div>
+<!-- Main Content Layer -->
+<div class="relative z-20 flex flex-col items-center justify-center h-full w-full p-6">
+<!-- Close Button (Simulated escape hatch) -->
+<button class="absolute top-12 right-6 text-zinc-500 hover:text-white transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+<!-- The Invitation Modal -->
+<div class="w-full max-w-sm relative group animate-float">
+<!-- Glow effect behind modal -->
+<div class="absolute -inset-0.5 bg-gradient-to-b from-primary/40 to-transparent rounded-xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+<!-- Modal Card -->
+<div class="relative glass-panel border border-primary/30 rounded-xl p-8 shadow-2xl flex flex-col items-center text-center overflow-hidden">
+<!-- Decorative Top Element -->
+<div class="w-px h-12 bg-gradient-to-b from-transparent via-primary/50 to-transparent absolute top-0 left-1/2 -translate-x-1/2"></div>
+<!-- Eyebrow -->
+<p class="text-primary text-[10px] font-medium tracking-[0.3em] uppercase mb-6 pt-4">
+                    Acceso Privado
+                </p>
+<!-- Title -->
+<h1 class="font-serif text-white text-4xl md:text-5xl leading-tight mb-4 tracking-tight drop-shadow-lg">
+                    El Drop <br/>
+<span class="italic text-zinc-300">Invisible</span>
+</h1>
+<!-- Divider -->
+<div class="flex items-center justify-center gap-3 w-full my-4">
+<div class="h-px w-12 bg-gradient-to-r from-transparent to-zinc-700"></div>
+<span class="material-symbols-outlined text-primary text-[16px] animate-pulse">diamond</span>
+<div class="h-px w-12 bg-gradient-to-l from-transparent to-zinc-700"></div>
+</div>
+<!-- Body Text -->
+<p class="text-zinc-400 text-sm font-light leading-relaxed mb-8 max-w-[260px]">
+                    Has sido elegida para descubrir lo que no todos pueden ver. Disponible solo por 12 horas.
+                </p>
+<!-- Countdown Timer -->
+<div class="flex items-baseline justify-center gap-1 mb-10 text-primary-dim font-display">
+<div class="flex flex-col items-center">
+<span class="text-3xl font-light tracking-widest tabular-nums" id="hours">00</span>
+<span class="text-[9px] uppercase tracking-wider text-zinc-600 mt-1">Hrs</span>
+</div>
+<span class="text-2xl font-light pb-4">:</span>
+<div class="flex flex-col items-center">
+<span class="text-3xl font-light tracking-widest tabular-nums animate-[pulse_2s_ease-in-out_infinite]" id="minutes">11</span>
+<span class="text-[9px] uppercase tracking-wider text-zinc-600 mt-1">Min</span>
+</div>
+<span class="text-2xl font-light pb-4">:</span>
+<div class="flex flex-col items-center">
+<span class="text-3xl font-light tracking-widest tabular-nums animate-[pulse_1s_ease-in-out_infinite]" id="seconds">59</span>
+<span class="text-[9px] uppercase tracking-wider text-zinc-600 mt-1">Sec</span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-zinc-950 hover:bg-black text-white text-xs font-bold tracking-[0.15em] py-4 px-6 rounded-md border border-zinc-800 shadow-[0_0_15px_rgba(0,0,0,0.5)] transition-all duration-300 hover:shadow-[0_0_20px_rgba(244,192,37,0.1)] hover:border-primary/30 hover:scale-[1.02] flex items-center justify-center gap-2 group/btn">
+<span>RECLAMAR MI LUGAR</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover/btn:translate-x-1">arrow_forward</span>
+</button>
+<!-- Bottom Decorative Shine -->
+<div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</div>
+<!-- Floating "Exclusive" Badge -->
+<div class="absolute -top-3 -right-3 rotate-12 bg-primary text-zinc-950 text-[9px] font-bold px-3 py-1 rounded-full shadow-lg border border-white/20">
+                ONLY 5 LEFT
+            </div>
+</div>
+<!-- Footer Note -->
+<p class="absolute bottom-8 text-zinc-600 text-[10px] tracking-widest uppercase">
+            Tap anywhere to dismiss
+        </p>
+</div>
+</body></html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO Blueprint Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#144bb8",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "zinc-lines": "#52525b",
+                        "ivory-paper": "#fbfbf9",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #e5e7eb 1px, transparent 1px), linear-gradient(to bottom, #e5e7eb 1px, transparent 1px)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        .blueprint-stroke {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+            /* In a real scenario, this would be animated, but per instructions no animation code is added */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-ivory-paper dark:bg-background-dark font-display antialiased text-slate-800 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-ivory-paper/90 dark:bg-background-dark/90 backdrop-blur-sm border-b border-primary/10">
+<button class="text-slate-900 dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-[28px]">menu</span>
+</button>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">IVYCO</h2>
+<a class="text-sm font-semibold text-primary tracking-wide uppercase" href="#">Shop</a>
+</header>
+<!-- Main Content Wrapper -->
+<main class="flex-grow pt-20 pb-10 px-6 flex flex-col gap-8">
+<!-- Blueprint Visual Section -->
+<section class="relative w-full aspect-[4/5] bg-white dark:bg-background-dark border border-primary/10 rounded-lg overflow-hidden shadow-sm">
+<!-- Grid Background -->
+<div class="absolute inset-0 bg-[size:40px_40px] opacity-[0.3] bg-grid-pattern pointer-events-none"></div>
+<!-- Technical Blueprint Illustration -->
+<div class="absolute inset-0 flex items-center justify-center p-8">
+<svg class="w-full h-full text-zinc-lines dark:text-slate-400 stroke-current fill-none stroke-[0.8]" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Abstract architectural shapes representing the product -->
+<circle class="blueprint-stroke opacity-20" cx="100" cy="100" r="80"></circle>
+<circle class="blueprint-stroke" cx="100" cy="100" r="65"></circle>
+<path class="stroke-[0.5] opacity-50 stroke-dashed" d="M100 35 L100 165"></path>
+<path class="stroke-[0.5] opacity-50 stroke-dashed" d="M35 100 L165 100"></path>
+<!-- Inner mechanical detail -->
+<path class="opacity-0" d="M70 100 Q100 50 130 100 T190 100"></path> <!-- Hidden guide -->
+<rect class="blueprint-stroke" height="80" rx="2" width="30" x="85" y="60"></rect>
+<circle class="fill-primary/10 stroke-primary" cx="100" cy="80" r="8"></circle>
+<circle class="fill-primary/10 stroke-primary" cx="100" cy="120" r="8"></circle>
+<!-- Measurement lines -->
+<line class="stroke-[0.3]" x1="170" x2="170" y1="35" y2="165"></line>
+<line class="stroke-[0.3]" x1="165" x2="175" y1="35" y2="35"></line>
+<line class="stroke-[0.3]" x1="165" x2="175" y1="165" y2="165"></line>
+<text class="text-[6px] fill-primary font-mono opacity-80 rotate-90" style="text-anchor: middle;" x="178" y="100">140mm</text>
+<!-- Technical Annotations -->
+<circle class="fill-primary stroke-none" cx="140" cy="140" r="2"></circle>
+<line class="stroke-primary stroke-[0.5]" x1="140" x2="160" y1="140" y2="160"></line>
+<text class="text-[5px] fill-primary font-mono font-bold" x="155" y="168">ZINC ALLOY</text>
+</svg>
+</div>
+<!-- Status Indicator -->
+<div class="absolute top-4 right-4 flex flex-col items-end gap-1">
+<span class="text-[10px] uppercase tracking-widest text-primary/60 font-mono">Schematic v.2.4</span>
+<div class="flex gap-1">
+<div class="w-1 h-1 rounded-full bg-primary animate-pulse"></div>
+<div class="w-1 h-1 rounded-full bg-primary/30"></div>
+<div class="w-1 h-1 rounded-full bg-primary/30"></div>
+</div>
+</div>
+</section>
+<!-- Editorial Content Block -->
+<section class="flex flex-col gap-6">
+<div class="space-y-2 border-l border-primary/20 pl-4">
+<h1 class="text-4xl font-display italic font-light text-slate-900 dark:text-white leading-[1.1]">
+                    Silent <br/>
+<span class="not-italic font-medium text-primary">Luxury.</span>
+</h1>
+<p class="text-sm uppercase tracking-widest text-zinc-500 font-medium pt-1">Engineering the Invisible</p>
+</div>
+<p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 font-light">
+                Precision isn't loud. Our blueprint reveals the unseen architecture of comfort, where every line serves a purpose and every curve is calculated for silence.
+            </p>
+<!-- Technical Details Accordion (Reusing pattern but styled for blueprint) -->
+<div class="flex flex-col gap-2 mt-4">
+<!-- Item 1 -->
+<div class="group border border-primary/10 bg-white dark:bg-slate-800/50 rounded p-4 hover:border-primary/30 transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">architecture</span>
+<span class="text-base font-medium text-slate-900 dark:text-white">Acoustic Engineering</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl">add</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group border border-primary/10 bg-white dark:bg-slate-800/50 rounded p-4 hover:border-primary/30 transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">science</span>
+<span class="text-base font-medium text-slate-900 dark:text-white">Material Composition</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl">add</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group border border-primary/10 bg-white dark:bg-slate-800/50 rounded p-4 hover:border-primary/30 transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">straighten</span>
+<span class="text-base font-medium text-slate-900 dark:text-white">Dimensions</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl">add</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs Summary Grid -->
+<section class="grid grid-cols-2 gap-4 py-4 border-t border-primary/10 mt-2">
+<div>
+<p class="text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Grade</p>
+<p class="text-base font-serif text-slate-900 dark:text-white">Aerospace Zinc</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Tolerance</p>
+<p class="text-base font-serif text-slate-900 dark:text-white">±0.005mm</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Finish</p>
+<p class="text-base font-serif text-slate-900 dark:text-white">Matte Ivory</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Weight</p>
+<p class="text-base font-serif text-slate-900 dark:text-white">142g</p>
+</div>
+</section>
+</main>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-ivory-paper via-ivory-paper to-transparent dark:from-background-dark dark:via-background-dark pointer-events-none flex justify-center pb-8">
+<button class="pointer-events-auto w-full max-w-md group relative flex items-center justify-center gap-3 py-4 px-6 bg-transparent border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 rounded shadow-sm overflow-hidden">
+<span class="relative z-10 text-sm font-bold tracking-widest uppercase">Explore Engineering</span>
+<span class="material-symbols-outlined relative z-10 text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="absolute inset-0 bg-primary/5 group-hover:bg-primary transition-colors duration-300 -z-0"></div>
+</button>
+</div>
+</body></html>

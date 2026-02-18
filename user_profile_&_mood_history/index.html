@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO - User Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d41132",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#121212", 
+                        "surface-dark": "#1c1c1c",
+                        "text-muted": "#a1a1aa",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-body antialiased selection:bg-primary selection:text-white">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto border-x border-white/5 shadow-2xl">
+<!-- Header Actions -->
+<div class="flex items-center justify-between p-6 pt-8 bg-transparent sticky top-0 z-20 backdrop-blur-md">
+<button class="text-white hover:text-primary transition-colors flex items-center justify-center rounded-full p-2 hover:bg-white/5">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-lg font-display font-medium tracking-wider text-white opacity-80">IVYCO</h1>
+<button class="text-white hover:text-primary transition-colors flex items-center justify-center rounded-full p-2 hover:bg-white/5">
+<span class="material-symbols-outlined text-2xl">settings</span>
+</button>
+</div>
+<!-- User Profile Hero -->
+<div class="flex flex-col items-center justify-center px-6 pt-2 pb-8 gap-6">
+<div class="relative group cursor-pointer">
+<div class="w-32 h-32 rounded-full overflow-hidden border border-white/10 ring-1 ring-white/5 shadow-2xl">
+<img alt="Portrait of a woman with elegant makeup" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0" data-alt="Elegant user profile portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzYSLgGq2fS0ZZGQMVO6i3q_dgaBbsnUgDZymYInJ3mA76E1q43pWymaR_21vvosNuIl_yh9cdjqhbWK5kg3aQfUo4MbWY0ILbgo0qy-fbIVZ_vqTgVlWUHJtHHKpcS2i4DhXf2HhJ_padcGFkw_BiqS8O2uBsGWgd1KheprTi1scq6-IY5n7cQ42zLdrgIQ6KI8ZYxMtmk6M56s9OkdvitHR0x9pTXBUtWKKEIHTMSM7arS7j3GItdpk6AHUa8CinYGWskOde3kc"/>
+</div>
+<div class="absolute bottom-0 right-0 bg-surface-dark border border-white/10 rounded-full p-1.5 shadow-lg">
+<span class="material-symbols-outlined text-primary text-sm">edit</span>
+</div>
+</div>
+<div class="text-center space-y-1">
+<h2 class="font-display text-4xl text-white font-light tracking-tight">Iris Iveth</h2>
+<div class="flex items-center justify-center gap-2">
+<span class="text-text-muted text-sm font-light uppercase tracking-widest">Mood Actual</span>
+<span class="h-px w-4 bg-white/20"></span>
+<span class="font-display italic text-primary text-xl">Poderosa</span>
+</div>
+</div>
+</div>
+<!-- Stats Section -->
+<div class="px-6 py-4">
+<div class="bg-surface-dark/50 border border-white/5 rounded-xl p-6 backdrop-blur-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl">spa</span>
+</div>
+<h3 class="text-text-muted text-xs uppercase tracking-widest font-medium mb-1">Tu Estadística de Ritual</h3>
+<div class="flex items-end gap-3">
+<span class="text-5xl font-display text-white font-light">340</span>
+<span class="text-lg text-white/60 font-light mb-1.5">minutos</span>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +12%
+                    </span>
+<span class="text-text-muted text-xs">vs. mes anterior</span>
+</div>
+</div>
+</div>
+<!-- History Timeline -->
+<div class="px-6 py-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-display text-2xl text-white font-light">Mi Historial de Ritual</h3>
+<button class="text-xs text-text-muted uppercase tracking-widest hover:text-white transition-colors">Ver Todo</button>
+</div>
+<div class="relative space-y-0 pl-2">
+<!-- Vertical Line -->
+<div class="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent"></div>
+<!-- Timeline Item 1 -->
+<div class="relative flex items-center gap-6 pb-8 group">
+<div class="z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-surface-dark border border-white/10 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-base text-primary">diamond</span>
+</div>
+<div class="flex-1 flex justify-between items-center border-b border-white/5 pb-8 group-hover:border-white/10 transition-colors">
+<div>
+<p class="font-display text-lg text-white group-hover:text-primary transition-colors italic">Glow</p>
+<p class="text-xs text-text-muted mt-0.5">Hydration Boost Ritual</p>
+</div>
+<span class="text-sm text-text-muted font-light">12 Oct</span>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative flex items-center gap-6 pb-8 group">
+<div class="z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-surface-dark border border-white/10 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-base text-white/60">water_drop</span>
+</div>
+<div class="flex-1 flex justify-between items-center border-b border-white/5 pb-8 group-hover:border-white/10 transition-colors">
+<div>
+<p class="font-display text-lg text-white group-hover:text-primary transition-colors italic">Soft</p>
+<p class="text-xs text-text-muted mt-0.5">Deep Repair Mask</p>
+</div>
+<span class="text-sm text-text-muted font-light">10 Oct</span>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative flex items-center gap-6 group">
+<div class="z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-surface-dark border border-white/10 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-base text-white/60">bolt</span>
+</div>
+<div class="flex-1 flex justify-between items-center pb-0">
+<div>
+<p class="font-display text-lg text-white group-hover:text-primary transition-colors italic">Power</p>
+<p class="text-xs text-text-muted mt-0.5">Volume Styling</p>
+</div>
+<span class="text-sm text-text-muted font-light">08 Oct</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Gallery / Acquisitions -->
+<div class="py-6 border-t border-white/5 mt-2">
+<div class="px-6 mb-5 flex justify-between items-end">
+<h3 class="font-display text-2xl text-white font-light">Mis Adquisiciones</h3>
+<div class="flex gap-2">
+<button class="bg-surface-dark hover:bg-white/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-white/60 text-lg">chevron_left</span>
+</button>
+<button class="bg-surface-dark hover:bg-white/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-white/60 text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-4 px-6 pb-4 no-scrollbar snap-x snap-mandatory">
+<!-- Product Card 1 -->
+<div class="min-w-[200px] snap-center bg-surface-dark rounded-lg p-3 border border-white/5 group hover:border-white/10 transition-all">
+<div class="bg-black/40 rounded h-32 mb-3 flex items-center justify-center overflow-hidden relative">
+<img alt="Luxury hair serum bottle minimal" class="h-full w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Minimalist serum bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB76MCuYpnKZT0rzu7t4Lj-w3WNQAiDcsx2bUx1lBjKmcssQXI5HDUGIheYselCeBSRrByhn0guDZAuSAu68LuDkjcrF0HI5FYgwda4vuaFgf_RSby9AJu1rajphzunAU6cZLuHm3FBusMFxODY4hEOP4xVFM03hBCeq0uIWWgl7qhLYa1ptsJVkWPFovBEbD3q6VhDhco_ndOiliptYEO0US1Z-mt-V3x47nfFiVpB2DEvOZdBRghN-coL0SPnmymECGnDi65yGx0"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<h4 class="text-white font-display text-lg leading-tight">Serum Nº 4</h4>
+<p class="text-text-muted text-xs mb-3">Repair &amp; Shine</p>
+<a class="text-xs text-primary uppercase tracking-widest border-b border-primary/30 pb-0.5 hover:text-white hover:border-white transition-colors inline-block" href="#">Ver Guía</a>
+</div>
+<!-- Product Card 2 -->
+<div class="min-w-[200px] snap-center bg-surface-dark rounded-lg p-3 border border-white/5 group hover:border-white/10 transition-all">
+<div class="bg-black/40 rounded h-32 mb-3 flex items-center justify-center overflow-hidden relative">
+<img alt="Modern hair dryer sleek design" class="h-full w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="High tech hair tool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdrf7fnzxSeu5m8j0FfYMwXHooZ5xcl_PSJISeThHjwwQeHV41_NJDN0pZ7rw_Vzv3PoPiAHL57HI-q8H_IbOdcsEdWo_I3MXurZOv7FfhdflKQiooZYqV-JjZheZSqM5QwJ1Ap8fWHECYbLCAR_l9nKnNJB5lFFobSLggYeZBw4-CV-UiL7xzbAZ16IK4eoLtfGjULPPcdBg9fucr2a171S60A-P8d1gtJ4489KLMOGnHMljBuKG7yta_UUkdIuK9LI_HS6URxCg"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<h4 class="text-white font-display text-lg leading-tight">Ivy Air Pro</h4>
+<p class="text-text-muted text-xs mb-3">Ionic Dryer</p>
+<a class="text-xs text-primary uppercase tracking-widest border-b border-primary/30 pb-0.5 hover:text-white hover:border-white transition-colors inline-block" href="#">Ver Guía</a>
+</div>
+<!-- Product Card 3 -->
+<div class="min-w-[200px] snap-center bg-surface-dark rounded-lg p-3 border border-white/5 group hover:border-white/10 transition-all">
+<div class="bg-black/40 rounded h-32 mb-3 flex items-center justify-center overflow-hidden relative">
+<img alt="Essential oils dark bottle" class="h-full w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Essential oil bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl7ASPLcxDKrzKu_wmsCdY7QJ29xkEFw5T4N8HN8CBUYBCyxh22KR7jqfGOeHAnbRvvZnBVX68ist0UtN6PbtFWXpMPannTjH1azJTtsvSmmh-p6QNtKxYlNkGIwHRxS4K_rhBkv5dWaSPG4T9XWNFyHgQnBH5VUMmzKatDPAha1ODI6hTdujIMlaiDQ7gPhPfxODFcw7tMn759_v3_L5O02Jyr6AcDco_VNfVbdvN9a95qYZvNg9FycfG61LAZ03c32rllyh2xKA"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<h4 class="text-white font-display text-lg leading-tight">Elixir Oil</h4>
+<p class="text-text-muted text-xs mb-3">Night Treatment</p>
+<a class="text-xs text-primary uppercase tracking-widest border-b border-primary/30 pb-0.5 hover:text-white hover:border-white transition-colors inline-block" href="#">Ver Guía</a>
+</div>
+</div>
+</div>
+<!-- Loyalty / Footer Section -->
+<div class="px-6 py-8 mt-auto bg-gradient-to-t from-surface-dark to-transparent">
+<div class="border-t border-white/5 pt-6">
+<div class="flex justify-between items-center mb-3">
+<h5 class="text-sm font-medium text-white tracking-wide">Ivyco Circle Member</h5>
+<span class="text-xs text-primary font-bold">Gold Tier</span>
+</div>
+<div class="relative w-full h-1 bg-white/10 rounded-full overflow-hidden mb-2">
+<div class="absolute top-0 left-0 h-full bg-primary w-[80%] rounded-full shadow-[0_0_10px_rgba(212,17,50,0.5)]"></div>
+</div>
+<div class="flex justify-between text-xs text-text-muted">
+<span>Próximo Private Drop</span>
+<span>80%</span>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation (Refined) -->
+<div class="sticky bottom-0 z-50 border-t border-white/5 bg-background-dark/95 backdrop-blur-lg px-6 py-4 pb-8">
+<div class="flex justify-between items-center max-w-sm mx-auto">
+<a class="flex flex-col items-center gap-1 text-white/40 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-white/40 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">search</span>
+</a>
+<a class="relative flex flex-col items-center gap-1 text-primary hover:text-primary transition-colors" href="#">
+<div class="absolute -top-3 w-8 h-1 bg-primary/50 rounded-full blur-sm"></div>
+<span class="material-symbols-outlined text-2xl fill-current">person</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-white/40 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">shopping_bag</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

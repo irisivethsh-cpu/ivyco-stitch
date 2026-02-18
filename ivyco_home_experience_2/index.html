@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO Desktop Experience: Split Hero</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#c11010",
+              "background-light": "#fdfbf7","background-dark": "#221010",
+              "surface-light": "#ffffff",
+              "surface-ivory": "#f4f1ea","surface-dark": "#2a1a1a",
+              "zinc-900": "#18181b","zinc-800": "#27272a",
+              "zinc-500": "#71717a",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"],
+              "serif": ["Playfair Display", "serif"],
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+            maxWidth: {
+                "desktop": "1440px"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            min-height: 100vh;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-zinc-900 dark:text-zinc-100">
+<div class="relative w-full min-h-screen mx-auto bg-background-light dark:bg-background-dark flex flex-col">
+<header class="w-full flex items-center justify-between px-12 py-8 bg-transparent z-50 absolute top-0 left-0">
+<h1 class="text-3xl font-serif tracking-widest font-bold text-zinc-900 dark:text-white">IVYCO</h1>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-xs font-medium tracking-[0.2em] text-zinc-800 hover:text-primary transition-colors uppercase" href="#">Catálogo</a>
+<a class="text-xs font-medium tracking-[0.2em] text-zinc-800 hover:text-primary transition-colors uppercase" href="#">Nuestra Casa</a>
+<a class="text-xs font-medium tracking-[0.2em] text-zinc-800 hover:text-primary transition-colors uppercase" href="#">Acceso VIP</a>
+<a class="text-xs font-medium tracking-[0.2em] text-zinc-800 hover:text-primary transition-colors uppercase" href="#">Diario</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="text-zinc-900 hover:text-primary transition-colors">
+<span class="material-symbols-outlined font-light">search</span>
+</button>
+<button class="text-zinc-900 hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined font-light">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col lg:flex-row h-screen min-h-[800px]">
+<div class="w-full lg:w-[55%] h-[50vh] lg:h-full relative overflow-hidden bg-zinc-200">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCH-tGng3gYZCy_1VwuuMsNMJ2Ecy-Ze4T-EjxMVZxX1l22ajl-a6kuX5cyDtvqfdqFC5xaUEsA-JExsV6XmU5XBeJZoK7JBEDTE9VFzTWU_zZFMBuRmvMeQb3uBEcbNyiDOLX6RVb0HwUVStuZiNmn-yG0aU0l2jWbVdLuMUa57wcjJL1n1iA9oF22MwhhMaaMVgooOZIUTHFc8duFpI4Nwb-Cgr-jMIYexPksgB5dEZvcLjO5wIHiK-LYW6cUUBkLQdw9DWNnymc"); background-position: center top;'></div>
+<div class="absolute inset-0 bg-black/10"></div> 
+</div>
+<div class="w-full lg:w-[45%] h-[50vh] lg:h-full bg-surface-ivory dark:bg-zinc-900 flex flex-col justify-center px-16 lg:px-24 py-12 relative">
+<div class="max-w-lg">
+<div class="w-12 h-[1px] bg-zinc-400 mb-8"></div>
+<h2 class="font-serif text-5xl lg:text-6xl font-light text-zinc-900 dark:text-white leading-tight mb-6">
+                    THE IVY <br/> <i class="font-thin">MOOD QUIZ</i>
+</h2>
+<p class="font-serif italic text-xl text-zinc-600 dark:text-zinc-400 mb-12 font-light">
+                    Personaliza tu ritual de lujo silencioso.
+                </p>
+<button class="bg-zinc-900 text-white px-10 py-5 text-xs font-bold uppercase tracking-[0.2em] hover:bg-zinc-800 transition-all duration-300 w-full sm:w-auto text-center border border-zinc-900">
+                    Iniciar Mi Ritual
+                </button>
+</div>
+<div class="absolute bottom-12 right-12 hidden lg:block">
+<span class="text-[10px] uppercase tracking-widest text-zinc-400 rotate-90 origin-bottom-right block translate-x-2">Est. 2024</span>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-black border-t border-zinc-100 dark:border-zinc-800 py-16 px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+<div class="flex flex-col gap-4">
+<h4 class="font-serif text-lg italic text-zinc-900 dark:text-white mb-2">Colecciones</h4>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors" href="#">Cabello</a>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors" href="#">Pestañas</a>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors" href="#">Herramientas</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-serif text-lg italic text-zinc-900 dark:text-white mb-2">Asistencia</h4>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors" href="#">Concierge</a>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors" href="#">Envíos</a>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors" href="#">Devoluciones</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-serif text-lg italic text-zinc-900 dark:text-white mb-2">Ubicación</h4>
+<p class="text-xs tracking-wide text-zinc-500 leading-relaxed">
+                    Flagship Store<br/>
+                    Av. Presidente Masaryk, Polanco<br/>
+                    Ciudad de México
+                </p>
+<div class="flex gap-4 mt-2 justify-center md:justify-start">
+<span class="text-xs font-bold uppercase tracking-widest text-zinc-900 cursor-pointer hover:underline">Ver Mapa</span>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-zinc-100 dark:border-zinc-900 flex justify-between items-center text-[10px] text-zinc-400 uppercase tracking-widest">
+<span>© 2024 IVYCO Beauty</span>
+<div class="flex gap-4">
+<a class="hover:text-zinc-900" href="#">Privacy</a>
+<a class="hover:text-zinc-900" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

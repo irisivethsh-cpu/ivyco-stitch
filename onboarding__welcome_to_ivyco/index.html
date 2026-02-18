@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding: Welcome to IVYCO</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eebd2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221d10",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hide for cleaner mobile look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased selection:bg-primary selection:text-black">
+<!-- Mobile Container -->
+<div class="relative mx-auto flex h-screen w-full max-w-md flex-col overflow-hidden bg-background-dark shadow-2xl">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0 h-full w-full bg-cover bg-center" data-alt="Serene woman in soft morning light looking peaceful" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDA98LJj_tAui0aM7w1LjtETglroXC9S8RKbJEmh0CfvlA5eLPBqJ_XYtVh7eu_R10VBwhSWJS02K0ruSTHHRtAqtvkWHyImniM3hP9XFzi-Cf5Aw-1CzVVkKzGweC3NqSa97tz6wujpsLhD2f2jrFQ5WpqZKPK75zOP5OSw1j5V9Za9Y6dSf77d7oDghJXly3EeKoQTWd_pVCEFEqiKR4XQZshZeSeSp5jv5_aBnOJZE-8SNAoQVp5G7zpLclLOZKhrMRnBOGcj8k');">
+<!-- Gradient Overlay for Readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/90"></div>
+</div>
+<!-- Top Bar (Status bar placeholder area) -->
+<div class="relative z-10 flex w-full items-center justify-between px-6 pt-14">
+<!-- Optional subtle branding or skip button could go here -->
+<span class="text-white/60 text-xs tracking-widest uppercase font-medium">IVYCO</span>
+</div>
+<!-- Main Content Area -->
+<div class="relative z-10 flex flex-1 flex-col items-center justify-end px-8 pb-12 text-center">
+<!-- Text Content -->
+<div class="mb-12 flex flex-col items-center animate-fade-in-up">
+<h1 class="text-white text-4xl font-light tracking-wide leading-tight drop-shadow-sm mb-4">
+                    Bienvenida a tu <br/>
+<span class="italic text-primary font-normal">nuevo ritual</span>
+</h1>
+<div class="h-[1px] w-12 bg-white/30 my-4"></div>
+<p class="text-white/80 text-lg font-light leading-relaxed max-w-[280px]">
+                    Un espacio donde tú eres la prioridad.
+                </p>
+</div>
+<!-- Pagination Dots -->
+<div class="mb-10 flex w-full flex-row items-center justify-center gap-4">
+<div class="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(238,189,43,0.6)]"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-white/20"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-white/20"></div>
+</div>
+<!-- Action Button -->
+<div class="flex w-full justify-center">
+<button class="group relative flex w-full items-center justify-center overflow-hidden rounded-full border border-primary/50 bg-black/20 backdrop-blur-sm px-8 py-4 text-white transition-all duration-300 hover:bg-primary/10 hover:border-primary active:scale-95">
+<span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+<span class="text-sm font-medium tracking-[0.15em] uppercase">Siguiente</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

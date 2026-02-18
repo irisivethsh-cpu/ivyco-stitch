@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO - Menú de Navegación</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c11010",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif-display": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'wght' 200, 'opsz' 24;
+        }
+        .nav-item-border {
+            border-bottom: 1px solid rgba(193, 16, 16, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#1b0d0d] antialiased">
+<!-- Full Screen Navigation Overlay -->
+<div class="relative flex h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
+<!-- Header Bar -->
+<header class="flex items-center justify-between px-6 py-8">
+<div class="flex-1">
+<span class="text-xl font-bold tracking-[0.2em] uppercase font-display text-primary">IVYCO</span>
+</div>
+<button class="flex items-center justify-center h-12 w-12 rounded-full hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</header>
+<!-- Main Navigation Content -->
+<div class="flex flex-col flex-1 px-8 pt-4 pb-12 justify-between">
+<!-- Primary Links (Large Serif) -->
+<nav class="flex flex-col gap-8 md:gap-12">
+<ul class="flex flex-col space-y-4 md:space-y-6">
+<li>
+<a class="group block" href="#">
+<span class="font-serif-display text-5xl md:text-7xl italic hover:text-primary transition-colors duration-300">Colecciones</span>
+<div class="h-px w-0 group-hover:w-24 bg-primary transition-all duration-500 mt-2"></div>
+</a>
+</li>
+<li>
+<a class="group block" href="#">
+<span class="font-serif-display text-5xl md:text-7xl hover:text-primary transition-colors duration-300">Tecnología</span>
+<div class="h-px w-0 group-hover:w-24 bg-primary transition-all duration-500 mt-2"></div>
+</a>
+</li>
+<li>
+<a class="group block" href="#">
+<span class="font-serif-display text-5xl md:text-7xl hover:text-primary transition-colors duration-300">Nuestra Historia</span>
+<div class="h-px w-0 group-hover:w-24 bg-primary transition-all duration-500 mt-2"></div>
+</a>
+</li>
+<li>
+<a class="group block" href="#">
+<span class="font-serif-display text-5xl md:text-7xl italic hover:text-primary transition-colors duration-300">Journal</span>
+<div class="h-px w-0 group-hover:w-24 bg-primary transition-all duration-500 mt-2"></div>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Bottom Section: Secondary Links and Info -->
+<div class="flex flex-col gap-10">
+<!-- Secondary Utility Links -->
+<div class="grid grid-cols-2 gap-y-4 border-t border-primary/10 pt-10">
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-primary transition-colors">person</span>
+<span class="uppercase tracking-widest text-xs font-semibold">Mi Cuenta</span>
+</a>
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-primary transition-colors">search</span>
+<span class="uppercase tracking-widest text-xs font-semibold">Búsqueda</span>
+</a>
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-primary transition-colors">shopping_bag</span>
+<span class="uppercase tracking-widest text-xs font-semibold">Carrito (0)</span>
+</a>
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-primary transition-colors">mail</span>
+<span class="uppercase tracking-widest text-xs font-semibold">Contacto</span>
+</a>
+</div>
+<!-- Editorial Image/Graphic Placeholder -->
+<div class="relative w-full h-32 overflow-hidden rounded-lg grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+<img class="w-full h-full object-cover object-center" data-alt="Minimalist fashion editorial photography backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDjS1dopeWC9bpDfi4gZi1y_KGf-_s-Pr7_vyCLHujbS4DG2OarUz1Ge7eX9VtV1vFpRyc92T6dqZM6xpJljKOSN6VrVZ2AaVCBTXZpMSIWgufINlyme2YI3yAVE6A7opqVxyZO3QVutWw7OFkCIrm6VAY8PBKzjNgxvMOZ3ukZzsPl5g-j2R1Ocgco3UsmcqGN5JxrUdBnUvyGgvlOohXGIRgtfi1RgIBkBoNi0glg_LXcv1cfK4_V8IXzZq29Jd_9J9vtEnwW8U"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background-light/80 to-transparent flex items-center px-6">
+<p class="font-serif-display italic text-lg">Nueva Colección Invierno '24</p>
+</div>
+</div>
+<!-- Footer Socials -->
+<div class="flex justify-between items-end">
+<div class="flex gap-6">
+<a class="text-[10px] uppercase tracking-tighter hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-[10px] uppercase tracking-tighter hover:text-primary transition-colors" href="#">Pinterest</a>
+<a class="text-[10px] uppercase tracking-tighter hover:text-primary transition-colors" href="#">X</a>
+</div>
+<p class="text-[10px] text-[#1b0d0d]/40 tracking-widest uppercase">© 2024 IVYCO</p>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+</div>
+</body></html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ivy Concierge Advice</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11c4d4",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102022",
+                        "stone-50": "#fafaf9",
+                        "cream-100": "#fdfbf7",
+                        "zinc-100": "#f4f4f5",
+                        "text-main": "#0d1a1b",
+                        "text-sub": "#5a6b6c"
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Subtle grain texture for that "paper-like" silent luxury feel */
+        .bg-grain {
+            position: relative;
+        }
+        .bg-grain::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .content-layer {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex justify-center bg-grain font-display text-text-main selection:bg-primary/20">
+<div class="content-layer w-full max-w-md mx-auto flex flex-col h-screen overflow-hidden shadow-2xl bg-[#f8fbfc] dark:bg-[#102022] relative">
+<!-- Header -->
+<header class="flex flex-col items-center justify-center pt-6 pb-2 px-4 z-10 bg-[#f8fbfc]/80 dark:bg-[#102022]/80 backdrop-blur-md sticky top-0 border-b border-gray-100 dark:border-gray-800/50">
+<div class="text-text-main flex size-10 items-center justify-center mb-1 text-primary">
+<!-- Abstract Ivy Logo -->
+<span class="material-symbols-outlined text-[32px]">spa</span>
+</div>
+<h1 class="text-text-main text-xl font-medium tracking-wide">Ivy</h1>
+<p class="text-primary text-sm italic font-light tracking-wide opacity-90">Tu guía de ritual</p>
+</header>
+<!-- Chat Area -->
+<main class="flex-1 overflow-y-auto px-4 py-6 flex flex-col gap-6 scroll-smooth">
+<!-- Timestamp -->
+<div class="text-center">
+<span class="text-xs text-text-sub font-sans uppercase tracking-widest opacity-60">Hoy, 9:41 AM</span>
+</div>
+<!-- Ivy Message -->
+<div class="flex items-end gap-3 group animate-fade-in-up">
+<div class="size-8 shrink-0 rounded-full bg-cover bg-center border border-gray-100 dark:border-gray-700 shadow-sm" data-alt="Abstract soft focus light texture representing AI avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5FTS964Tt1GKjDoVmo9WKD5EIsRW9tZup02LVYITJ0to5LMlBV5ZY0nxa3G5piYkohJXshlm_eJQgZmLWMXZraSf6k4qQYgUSsNQCoGjpDlb3kgXBVGi60lUXVB9fDb4bi9vqODb-rMKaEshz3YASZ4HL04YhjNGZDfEHwAms3Fm96erf6Av8FbdkjeF_04Aplp5IDq8RejUIXRdVMIupnVynA3E4GxqJLdLZCjzaBNqP0qGD9EcRf8wCTN_KFFzdgyjmdKEnBCo");'></div>
+<div class="flex flex-col gap-1 max-w-[85%]">
+<span class="text-primary text-xs font-sans font-medium ml-1">Ivy</span>
+<div class="p-5 bg-cream-100 dark:bg-[#1A2C2E] rounded-2xl rounded-bl-sm shadow-sm border border-[#f0ebe0] dark:border-[#233638]">
+<p class="text-[17px] leading-relaxed text-text-main font-display font-light">
+                            Bienvenida de nuevo, Iris. Hoy percibo una energía <i class="font-normal text-primary/90">Poderosa</i> en ti. ¿Te gustaría un consejo para elevar tu mirada?
+                        </p>
+</div>
+</div>
+</div>
+<!-- Quick Ritual Chips -->
+<div class="flex flex-wrap gap-2 pl-11 animate-fade-in-up" style="animation-delay: 150ms;">
+<button class="h-9 px-4 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#1A2C2E] text-text-main text-sm font-sans hover:border-primary/50 hover:bg-primary/5 transition-colors flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">lightbulb</span>
+                    Consejo para hoy
+                </button>
+<button class="h-9 px-4 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#1A2C2E] text-text-main text-sm font-sans hover:border-primary/50 hover:bg-primary/5 transition-colors flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">mood</span>
+                    Test de Ánimo
+                </button>
+<button class="h-9 px-4 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#1A2C2E] text-text-main text-sm font-sans hover:border-primary/50 hover:bg-primary/5 transition-colors flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">local_shipping</span>
+                    Dudas de envío
+                </button>
+</div>
+<!-- Spacer to push content up if needed -->
+<div class="flex-1"></div>
+</main>
+<!-- Input Area -->
+<footer class="p-4 bg-[#f8fbfc] dark:bg-[#102022] pb-8 relative z-20">
+<!-- Gradient fade top of footer -->
+<div class="absolute -top-6 left-0 right-0 h-6 bg-gradient-to-t from-[#f8fbfc] to-transparent dark:from-[#102022]"></div>
+<div class="relative flex items-center gap-2 bg-white dark:bg-[#1A2C2E] p-1.5 pr-2 rounded-full shadow-lg border border-gray-100 dark:border-gray-800 ring-1 ring-gray-50 dark:ring-gray-900">
+<!-- AI Sparkle Button -->
+<button aria-label="AI Recommendations" class="flex items-center justify-center size-10 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 text-primary transition-colors group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">auto_awesome</span>
+</button>
+<!-- Text Input -->
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-text-main placeholder:text-text-sub/50 font-sans text-base px-2 py-2" placeholder="Escribe tu duda..." type="text"/>
+<!-- Send Button -->
+<button aria-label="Send Message" class="flex items-center justify-center size-10 rounded-full bg-primary text-white shadow-md hover:bg-primary/90 transition-all hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-[20px] ml-0.5">arrow_upward</span>
+</button>
+</div>
+</footer>
+</div>
+<style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0; /* Start hidden */
+        }
+    </style>
+</body></html>

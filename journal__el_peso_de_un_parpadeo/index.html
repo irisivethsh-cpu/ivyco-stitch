@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO Journal - El peso de un parpadeo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec6d13",
+                        "background-light": "#fcfaf8", // Creamy off-white
+                        "background-dark": "#221810",
+                        "text-main": "#292524", // Stone 800
+                        "text-muted": "#78716c", // Stone 500
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    backgroundImage: {
+                        'paper-texture': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0JyBoZWlnaHQ9JzQnPgo8cmVjdCB3aWR0aD0nNCcgaGVpZ2h0PSc0JyBmaWxsPScjZmNmYWY4Jy8+CjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyMwMDAwMDAnIG9wYWNpdHk9JzAuMDInLz4KPC9zdmc+')",
+                        'paper-texture-dark': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0JyBoZWlnaHQ9JzQnPgo8cmVjdCB3aWR0aD0nNCcgaGVpZ2h0PSc0JyBmaWxsPScjMjIxODEwJy8+CjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyNmZmZmZmYnIG9wYWNpdHk9JzAuMDMnLz4KPC9zdmc+')"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hide for cleaner look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Smooth underline animation */
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #ec6d13;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-white antialiased transition-colors duration-300">
+<!-- Main Container with paper texture overlay -->
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-paper-texture dark:bg-paper-texture-dark">
+<!-- Navigation Bar -->
+<nav class="sticky top-0 z-50 flex items-center justify-between p-4 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm transition-all duration-300">
+<button aria-label="Go back" class="flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-text-main dark:text-white !text-[24px]">arrow_back</span>
+</button>
+<h2 class="text-text-main dark:text-white text-xs font-sans font-medium tracking-[0.2em] uppercase flex-1 text-center pr-12 opacity-80">
+                Journal
+            </h2>
+</nav>
+<!-- Article Content -->
+<main class="flex-1 flex flex-col max-w-2xl mx-auto w-full pb-20">
+<!-- Header Section -->
+<header class="px-6 pt-6 pb-8 text-center flex flex-col items-center">
+<h1 class="text-text-main dark:text-white text-4xl md:text-5xl font-light italic leading-[1.15] mb-4">
+                    El peso de un <br/>
+<span class="not-italic font-normal">parpadeo</span>
+</h1>
+<div class="w-8 h-[1px] bg-primary/40 my-4"></div>
+<p class="text-text-muted dark:text-neutral-400 text-xs font-sans tracking-wide uppercase">
+                    Por Ivyco Editorial • 3 min de lectura
+                </p>
+</header>
+<!-- Hero Image -->
+<div class="px-4 mb-10 w-full">
+<div class="relative w-full aspect-[3/4] md:aspect-[16/9] overflow-hidden rounded-lg shadow-sm">
+<!-- Placeholder for high-fashion grainy B&W photo -->
+<div class="absolute inset-0 bg-cover bg-center grayscale contrast-125" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwxxz8zfP8qJcUBd5txx3JPEzhcrmCEFPYlFGFICvXZYNJLHtJPmsrmXvpY1v3jZ3dGBz75CVtf2Y4OS9JASZ0a51F7j6Teb3Vx9Q_Za4R0WrQ4s803bxMNugYY-D5T5Pg9vdtLiSzBQEIW3Ru3dbtMHwDvTgJXniA2j4PTHuJ8d-KP_-35GJCYjBEwjTkI54qhjF5pvn2BJyTd4CxKd6fJbWS7mdd3SgVsFC5CZvdE00dFnFrt_FidPk0FVmXcWw9C8zjABiMabQ'); filter: sepia(20%) grayscale(100%) contrast(1.1) brightness(0.9);">
+</div>
+<!-- Overlay for subtle aging effect -->
+<div class="absolute inset-0 bg-primary/5 mix-blend-multiply pointer-events-none"></div>
+<div class="absolute inset-0 opacity-[0.08] pointer-events-none mix-blend-overlay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7V4uZc_48422NFCI1cuIbJ8lmdW6F2I6Y5HEgGIigxSVauDc4KV9gL6UGZfvLvbHB56gdKlg_BuarRr3xDs8anuTzetlRs4GHuiAXRG_T3Ft2Bec_4uiaFO211UqUj5C-LkCeB81JqohOP1NPOf1SjFBEiZKRozjnCxTZmpHn7hzTFg4BpSshjZQCm9Ez_hypnWpPF_BGqe-GgFYYm_oNp9dHYOwRC9Vf6ZK7jHOOoOWjUWuXuEuan4VXYR6gTwMj_JWKoSsmsyo');"></div>
+<!-- Data alt attribute as requested -->
+<div class="hidden" data-alt="Black and white profile of woman looking up focusing on eyelashes"></div>
+</div>
+<p class="mt-2 text-[10px] text-center text-text-muted dark:text-neutral-500 font-sans tracking-widest uppercase opacity-60">Fig 1. La mirada sostenida</p>
+</div>
+<!-- Article Body -->
+<article class="px-6 md:px-8 text-lg md:text-xl text-text-main/90 dark:text-gray-200 leading-[1.8] font-light">
+<!-- Paragraph 1 with Drop Cap -->
+<p class="mb-8 relative">
+<span class="float-left text-7xl leading-[0.75] mt-1 mr-3 text-primary font-normal font-display">L</span>
+                    a mirada no pide permiso. Es el primer lenguaje que aprendemos y el último que olvidamos. En un mundo saturado de ruido constante, el silencio de una mirada sostenida tiene el peso tectónico de mil palabras no pronunciadas. Es un acto de desafío y, a la vez, de profunda intimidad.
+                </p>
+<p class="mb-10">
+                    Durante siglos, se nos enseñó a bajar la vista, a ocultar la intención detrás de un velo de modestia. Pero hoy, reescribimos ese guion. Entendemos que la belleza no es solo lo que se ve, sino cómo se mira.
+                </p>
+<!-- Pull Quote -->
+<div class="my-12 relative py-8">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-primary"></div>
+<blockquote class="text-2xl md:text-3xl font-normal text-center italic text-text-main dark:text-white leading-snug px-4">
+                        "No pedimos permiso para ser vistas. Nuestra mirada es la primera palabra."
+                    </blockquote>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-primary"></div>
+</div>
+<p class="mb-8">
+                    La tecnología de la belleza ha evolucionado para acompañar este despertar. Ya no se trata de disfrazar, sino de amplificar lo que ya es inherente. Unas pestañas sanas y fuertes no son solo un adorno estético; son el marco de esa ventana al alma, la arquitectura que sostiene la intensidad de nuestra atención.
+                </p>
+<p class="mb-12">
+                    En el "Silent Luxury", el verdadero lujo es el tiempo que nos dedicamos a nosotras mismas y la confianza tranquila de saber que no necesitamos gritar para ser escuchadas. Basta con un parpadeo.
+                </p>
+</article>
+<!-- Footer CTA -->
+<div class="mt-8 mb-16 px-6 text-center">
+<div class="w-full h-px bg-gradient-to-r from-transparent via-text-muted/20 to-transparent mb-10"></div>
+<p class="text-sm font-sans text-text-muted mb-4 tracking-wide uppercase">Continúa la experiencia</p>
+<a class="group inline-flex flex-col items-center justify-center gap-2 text-primary hover:text-primary/80 transition-colors" href="#">
+<span class="text-xl md:text-2xl italic font-medium hover-underline-animation">
+                        Descubrir el Ritual de la Mirada
+                    </span>
+<span class="material-symbols-outlined group-hover:translate-y-1 transition-transform duration-300 text-sm">keyboard_arrow_down</span>
+</a>
+</div>
+<!-- Related / Next (Subtle) -->
+<div class="px-4 grid grid-cols-2 gap-3 opacity-60 hover:opacity-100 transition-opacity duration-500">
+<div class="flex flex-col gap-2 cursor-pointer group">
+<div class="w-full aspect-[4/5] bg-neutral-200 dark:bg-white/5 rounded overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0" data-alt="Abstract serum bottle texture close up" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAolfnQ_-VYwpiv9pIX10dFdLeQUYbC6OKa9ckLtPj_fGjhN8WE6pLIHK_S8FZ4N5hBAqyjqt3X-qF7Vn77yvltwp_CmF8M_diuCBND4-BOcvX9LV7Lr-i416FwpKd_M8rzXRzmuAgQPLGK4EeraS2WY6mYLXRaFYd_MZKQNqohTpZFzfGhIsg9o-KpmKuMI2O9dYn_59w0w7HcbW0Dj5KK8OLIe-Uo2Vhp1pleO5juFfXGM2zytiImlC11rK3fH0C4yjMtBMhlQiQ');"></div>
+</div>
+<h3 class="text-xs font-sans font-bold tracking-wide uppercase text-text-main dark:text-white mt-1">Ciencia</h3>
+<p class="text-sm italic font-light leading-tight">La alquimia de los ingredientes botánicos.</p>
+</div>
+<div class="flex flex-col gap-2 cursor-pointer group">
+<div class="w-full aspect-[4/5] bg-neutral-200 dark:bg-white/5 rounded overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0" data-alt="Soft silk fabric waving in light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArIBCA92htgf683mFJOmWJVMNnCBA_Lw5QF1loo_lT8e5RTzM2NU8kNrLukeIKauBb7YKLfThfPJK70FPHjXKvGpixSqv1NsJBeKhPMvjsTGu_-D9ZE-LUIW17U28_m3v7OakGY_0ZBZpRBZM9bqteIAVhC1zSsp-lJfwDKLy79nXK8ZSaD8Nh5j9Zdiz2-ABt2m_Sircjqn37plWF_LZ35Zhlj5oZuq3vwDVL6LiuGaaRQqb3HYYMwX5KNA5i7rJ8186yAdw8zcU');"></div>
+</div>
+<h3 class="text-xs font-sans font-bold tracking-wide uppercase text-text-main dark:text-white mt-1">Estilo</h3>
+<p class="text-sm italic font-light leading-tight">Minimalismo: menos es más.</p>
+</div>
+</div>
+</main>
+</div>
+</body></html>

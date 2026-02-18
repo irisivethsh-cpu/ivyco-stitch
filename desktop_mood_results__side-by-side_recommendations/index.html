@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO - Mood Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#bd0f66",
+                        "background-light": "#f8f6f7", 
+                        "background-dark": "#221019",
+                        "zinc-850": "#202022",
+                        "cream-100": "#fcfbf9",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-850 antialiased selection:bg-primary/20">
+<!-- Mobile Container -->
+<div class="mx-auto flex min-h-screen w-full max-w-md flex-col bg-cream-100 shadow-2xl overflow-x-hidden relative">
+<!-- Sticky Minimalist Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-cream-100/90 backdrop-blur-sm transition-all duration-300">
+<button class="flex size-10 items-center justify-start text-zinc-850 hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-[0.1em] text-zinc-850 font-sans">IVYCO</h1>
+<button class="flex size-10 items-center justify-end text-zinc-850 hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined" style="font-size: 24px;">shopping_bag</span>
+<span class="absolute top-1 right-0 block h-2 w-2 rounded-full bg-primary ring-2 ring-cream-100"></span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex flex-col relative">
+<!-- Hero Section: Mood Imagery -->
+<section class="relative h-[55vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-zinc-900">
+<img alt="Artistic black and white portrait of a woman with radiant hair looking powerful" class="h-full w-full object-cover opacity-90 grayscale hover:scale-105 transition-transform duration-[2s] ease-out" data-alt="Black and white artistic portrait of a woman with flowing hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPFRiklJBLc3qcxNnwRse-KJHllKujmlG9nvcQWQrYr2dP7xPCk5zbBPV2CvRRRh_NiNbvsb0_pvE5UQ82xn1_U0Sa3ZtS6FMZ8qEZPq4L9Xxqiv9Hdx9rlqBmhB-sVsOgj1oJpw-8Eoap9bkkiR2t3BhRW5X9Iy2whdqGf_PffEGSvvNhuvVyW11mgAFNOLTcnmXBM4GTaefqjYSECMqpUmvYVfEqtRs0Q2YW4id0BscLpNwghSslvMKV8fJg_E5pTwoonfTIuWc"/>
+</div>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-cream-100 via-transparent to-transparent opacity-100 h-full w-full pointer-events-none"></div>
+<!-- Floating Label -->
+<div class="absolute bottom-8 left-0 right-0 text-center px-6">
+<p class="text-sm font-sans tracking-[0.2em] uppercase text-zinc-850 mb-2 opacity-80">Tu Perfil Ivyco</p>
+<h2 class="text-5xl font-normal italic tracking-tight text-zinc-850 drop-shadow-sm">Poderosa</h2>
+</div>
+</section>
+<!-- Decorative Vertical Divider Line -->
+<div class="flex justify-center -mt-4 pb-8 relative z-10">
+<div class="h-24 w-[1px] bg-gradient-to-b from-zinc-850/20 to-transparent"></div>
+</div>
+<!-- Description Text -->
+<section class="px-8 pb-12 text-center">
+<p class="font-display text-xl text-zinc-600 leading-relaxed font-light">
+                    Radiante, segura y magnética. Tu ritual está diseñado para potenciar tu presencia natural.
+                </p>
+</section>
+<!-- Products Section -->
+<section class="flex flex-col gap-12 px-6 pb-24 relative">
+<!-- Decorative thin line connecting products -->
+<div class="absolute left-1/2 top-0 bottom-24 w-[1px] bg-zinc-200 -translate-x-1/2 -z-10"></div>
+<!-- Product Card 1 -->
+<article class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 border border-zinc-100/50">
+<div class="relative aspect-[4/3] bg-background-light overflow-hidden">
+<img alt="Minimalist shot of a high-end hair styling tool on a marble surface" class="h-full w-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-700" data-alt="Sleek hair straightener styling tool on light background" src=""/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full">
+<span class="text-xs font-sans tracking-wide font-medium">$129.00</span>
+</div>
+</div>
+<div class="p-6 text-center bg-white relative z-10">
+<h3 class="text-2xl font-display font-medium text-zinc-850 mb-2">Ivyco Heat Tool</h3>
+<p class="text-zinc-500 text-sm font-sans mb-6 font-light">Esculpe sin dañar. Tecnología cerámica avanzada.</p>
+<button class="w-full bg-zinc-850 text-white font-sans text-xs font-bold uppercase tracking-widest py-4 rounded hover:bg-primary transition-colors duration-300 flex items-center justify-center gap-2 group/btn">
+<span>Añadir al Ritual</span>
+<span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 border border-zinc-100/50">
+<div class="relative aspect-[4/3] bg-background-light overflow-hidden">
+<img alt="Close up of mascara wand and bottle minimalist cosmetic packaging" class="h-full w-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-700" data-alt="Mascara tube and wand on a clean surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4t4hoY9hqqrd51ar6xydhqDgWI1inNVS4hrCWvXcesTN5oQK7-12PiFyVxZw5kxouoQ7tnMMUg53SK9h-LlZK6IS-7_5UNz0-XR6_i21q3490c7OdbeQFt57MeDhbOK79xmrT8PkU5_ARQOO_jVmVHuhRsAvnH7ZIBZRjlyBnF3x03slepRD6wOdVSTBeB1w4hYmCl24sRL8SBY137kKpmxS4ZuUn53PTLveU1ulk-y39pLvDL1_r9cfUzUKHbm5Pj5y1BC_HbVM"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full">
+<span class="text-xs font-sans tracking-wide font-medium">$34.00</span>
+</div>
+</div>
+<div class="p-6 text-center bg-white relative z-10">
+<h3 class="text-2xl font-display font-medium text-zinc-850 mb-2">Bold Lashes</h3>
+<p class="text-zinc-500 text-sm font-sans mb-6 font-light">Volumen que habla. Fórmula de larga duración.</p>
+<button class="w-full bg-zinc-850 text-white font-sans text-xs font-bold uppercase tracking-widest py-4 rounded hover:bg-primary transition-colors duration-300 flex items-center justify-center gap-2 group/btn">
+<span>Añadir al Ritual</span>
+<span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+</main>
+<!-- Sticky Bottom Summary (Optional CTA) -->
+<div class="fixed bottom-6 left-4 right-4 z-40 max-w-md mx-auto">
+<button class="w-full bg-primary/95 backdrop-blur shadow-lg shadow-primary/20 text-white py-4 rounded-lg flex items-center justify-between px-6 hover:bg-primary transition-all active:scale-[0.98]">
+<div class="flex flex-col items-start">
+<span class="text-xs uppercase tracking-wider opacity-90">Total Ritual</span>
+<span class="font-display text-lg italic">$163.00</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-sans text-sm font-bold uppercase tracking-wider">Comprar Todo</span>
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+</button>
+</div>
+</div>
+</body></html>

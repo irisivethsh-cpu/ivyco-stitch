@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secure Payment Ritual</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1212a1",
+                        "background-light": "#FAF9F6", // Adjusted to Off-white/Ivory as requested
+                        "background-dark": "#111121",
+                        "ivory": "#FAF9F6",
+                        "stone": "#F5F5F4",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 antialiased selection:bg-primary/20">
+<div class="relative mx-auto flex h-full min-h-screen w-full max-w-md flex-col overflow-hidden bg-background-light dark:bg-background-dark shadow-xl">
+<!-- Header -->
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/95 dark:bg-background-dark/95 px-6 py-4 backdrop-blur-sm">
+<button class="flex size-10 items-center justify-center rounded-full text-slate-800 transition-colors hover:bg-slate-100 dark:text-white dark:hover:bg-slate-800">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h2 class="font-serif text-lg font-medium italic tracking-wide text-slate-900 dark:text-white">Checkout</h2>
+<div class="size-10"></div> <!-- Spacer for balance -->
+</header>
+<!-- Progress Indicator -->
+<div class="flex flex-col gap-3 px-6 pb-6 pt-2">
+<div class="flex items-center justify-center gap-2 text-xs uppercase tracking-widest">
+<span class="text-slate-400">Envío</span>
+<span class="text-slate-300">&gt;</span>
+<span class="font-bold text-primary dark:text-blue-400">Pago</span>
+<span class="text-slate-300">&gt;</span>
+<span class="font-serif italic capitalize text-slate-400">Ritual</span>
+</div>
+<div class="h-[2px] w-full rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="h-full w-2/3 rounded-full bg-primary shadow-[0_0_10px_rgba(18,18,161,0.3)]"></div>
+</div>
+</div>
+<main class="flex flex-1 flex-col gap-6 px-6 pb-24">
+<!-- Order Summary Accordion -->
+<details class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 open:pb-4 dark:border-slate-700 dark:bg-slate-800">
+<summary class="flex cursor-pointer items-center justify-between p-4 transition-colors hover:bg-slate-50 dark:hover:bg-slate-700/50">
+<span class="text-sm font-medium tracking-wide text-slate-700 dark:text-slate-200">Resumen del Pedido</span>
+<div class="flex items-center gap-3">
+<span class="font-serif font-medium italic text-slate-900 dark:text-white">$120.00</span>
+<span class="material-symbols-outlined text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</div>
+</summary>
+<div class="flex flex-col gap-4 px-4 pt-2 animate-in slide-in-from-top-2 fade-in duration-200">
+<div class="flex gap-4">
+<div class="h-16 w-16 shrink-0 overflow-hidden rounded-lg border border-slate-100 bg-slate-50 dark:border-slate-700 dark:bg-slate-900">
+<img alt="Luxury hair oil bottle on marble" class="h-full w-full object-cover" data-alt="Golden luxury hair oil bottle on minimal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDabtr6hN-W0MVgERlQGk7gm7j3E2WuUHg302MPZM6PUA_1yD3eAdW9IlcuFbDoyco0KqWBFV0uIp14-eZEyDFhGQQ5kj4DGNm5Q2CWaAbqIuud6NAr459a6-Kg37nFL3WtbadullKiihZQBArRLf1uUgOm505S9fmzclMlg2SMY8OReqXeFupcDlOLi4e1mk_ifquBF64C8Axm8bojX6Ztx5Zdwm-JCBsc3I01TlyrQsccVpWrOsk9Bly7Rjzl5h5mRqMtlMvINUA"/>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<h4 class="font-medium text-slate-900 dark:text-white">Luxury Hair Oil</h4>
+<p class="text-xs text-slate-500">50ml · Gold Edition</p>
+</div>
+<div class="flex flex-col justify-center items-end">
+<span class="text-sm font-medium text-slate-900 dark:text-white">$60.00</span>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="h-16 w-16 shrink-0 overflow-hidden rounded-lg border border-slate-100 bg-slate-50 dark:border-slate-700 dark:bg-slate-900">
+<img alt="Silk pillowcase texture close up" class="h-full w-full object-cover" data-alt="White silk fabric texture close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi-Bnn3h_GjbG-3VgO-DKuJ890XCCWBocWKdNmdJ3j7lliJnY0zvCLGDps915KJZON3G3yIXdjoQsVLtF8eZ9S6nBTbw20SGaGqrT4CBMPTb7Rm4fhdj44Pyi5al9rDjM86LbW2FwnkH2_vlxJ7U_kignSEZIfXBVRgUzFKkT8HIoY73Bdy0zsr65AUWsh41yZWJ_OjDFPKw1eNb7rDOepCoplU-YzkbQ_y-pUAJAqEMWg3EvgmNYV63tqiMFQPElrCnb-L5RLpak"/>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<h4 class="font-medium text-slate-900 dark:text-white">Silk Pillowcase</h4>
+<p class="text-xs text-slate-500">Standard · Pearl White</p>
+</div>
+<div class="flex flex-col justify-center items-end">
+<span class="text-sm font-medium text-slate-900 dark:text-white">$60.00</span>
+</div>
+</div>
+<div class="mt-2 border-t border-slate-100 pt-3 dark:border-slate-700">
+<div class="flex justify-between text-xs text-slate-500">
+<span>Subtotal</span>
+<span>$120.00</span>
+</div>
+<div class="flex justify-between text-xs text-slate-500 mt-1">
+<span>Envío</span>
+<span class="text-primary dark:text-blue-400">Gratis</span>
+</div>
+</div>
+</div>
+</details>
+<!-- Payment Methods -->
+<div class="space-y-4">
+<h3 class="px-1 text-xs font-semibold uppercase tracking-widest text-slate-400">Método de Pago</h3>
+<div class="grid grid-cols-2 gap-3">
+<label class="group relative flex cursor-pointer flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-primary/30 has-[:checked]:border-primary has-[:checked]:bg-primary/5 has-[:checked]:shadow-md dark:border-slate-700 dark:bg-slate-800 dark:has-[:checked]:border-blue-500 dark:has-[:checked]:bg-blue-900/20">
+<input class="peer sr-only" name="payment_method" type="radio" value="apple_pay"/>
+<span class="material-symbols-outlined mb-2 text-3xl text-slate-800 peer-checked:text-primary dark:text-white dark:peer-checked:text-blue-400">smartphone</span>
+<span class="text-xs font-medium text-slate-600 peer-checked:text-primary dark:text-slate-300 dark:peer-checked:text-blue-400">Apple Pay</span>
+</label>
+<label class="group relative flex cursor-pointer flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-primary/30 has-[:checked]:border-primary has-[:checked]:bg-primary/5 has-[:checked]:shadow-md dark:border-slate-700 dark:bg-slate-800 dark:has-[:checked]:border-blue-500 dark:has-[:checked]:bg-blue-900/20">
+<input checked="" class="peer sr-only" name="payment_method" type="radio" value="credit_card"/>
+<span class="material-symbols-outlined mb-2 text-3xl text-slate-800 peer-checked:text-primary dark:text-white dark:peer-checked:text-blue-400">credit_card</span>
+<span class="text-xs font-medium text-slate-600 peer-checked:text-primary dark:text-slate-300 dark:peer-checked:text-blue-400">Tarjeta</span>
+</label>
+</div>
+<!-- Credit Card Form -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+<div class="space-y-1">
+<label class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Card Number</label>
+<div class="relative flex items-center">
+<input class="peer w-full border-0 border-b border-slate-200 bg-transparent px-0 py-2 text-base font-medium text-slate-900 placeholder-slate-300 transition-colors focus:border-primary focus:ring-0 dark:border-slate-600 dark:text-white dark:placeholder-slate-600 dark:focus:border-blue-500" placeholder="0000 0000 0000 0000" type="text"/>
+<div class="absolute right-0 flex items-center gap-2 text-slate-400 peer-focus:text-primary dark:peer-focus:text-blue-400">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-1 space-y-1">
+<label class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Expiry</label>
+<input class="w-full border-0 border-b border-slate-200 bg-transparent px-0 py-2 text-base font-medium text-slate-900 placeholder-slate-300 transition-colors focus:border-primary focus:ring-0 dark:border-slate-600 dark:text-white dark:placeholder-slate-600 dark:focus:border-blue-500" placeholder="MM/YY" type="text"/>
+</div>
+<div class="flex-1 space-y-1">
+<label class="text-[10px] font-bold uppercase tracking-wider text-slate-400">CVC</label>
+<div class="relative">
+<input class="w-full border-0 border-b border-slate-200 bg-transparent px-0 py-2 text-base font-medium text-slate-900 placeholder-slate-300 transition-colors focus:border-primary focus:ring-0 dark:border-slate-600 dark:text-white dark:placeholder-slate-600 dark:focus:border-blue-500" placeholder="123" type="text"/>
+<span class="material-symbols-outlined absolute right-0 top-2 text-[20px] text-slate-300">help</span>
+</div>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Name on Card</label>
+<input class="w-full border-0 border-b border-slate-200 bg-transparent px-0 py-2 text-base font-medium text-slate-900 placeholder-slate-300 transition-colors focus:border-primary focus:ring-0 dark:border-slate-600 dark:text-white dark:placeholder-slate-600 dark:focus:border-blue-500" placeholder="Alexandra Doe" type="text"/>
+</div>
+<div class="flex items-center gap-2 pt-2 text-xs text-slate-400">
+<span class="material-symbols-outlined text-[16px]">shield_lock</span>
+<span>Payments are secure and encrypted</span>
+</div>
+</div>
+</div>
+<div class="flex-1"></div>
+</main>
+<!-- Fixed Footer -->
+<div class="fixed bottom-0 z-20 w-full max-w-md bg-white/80 p-6 backdrop-blur-md dark:bg-slate-900/80">
+<div class="mb-4 flex items-baseline justify-between">
+<span class="text-sm font-medium text-slate-500">Total a Pagar</span>
+<span class="font-serif text-2xl font-medium italic text-slate-900 dark:text-white">$120.00</span>
+</div>
+<button class="group relative w-full overflow-hidden rounded-lg bg-primary py-4 text-white shadow-[0_4px_14px_0_rgba(18,18,161,0.39)] transition-all hover:scale-[1.01] hover:shadow-[0_6px_20px_rgba(18,18,161,0.23)] active:scale-95 dark:shadow-none">
+<span class="relative z-10 font-bold uppercase tracking-widest text-sm">Pagar Ahora</span>
+<div class="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 ease-in-out group-hover:translate-x-0"></div>
+</button>
+<div class="mt-3 flex justify-center items-center gap-1.5 opacity-60">
+<span class="material-symbols-outlined text-[14px] text-slate-500">lock</span>
+<span class="text-[10px] font-medium uppercase tracking-wide text-slate-500">Secure SSL Transaction</span>
+</div>
+</div>
+</div>
+</body></html>

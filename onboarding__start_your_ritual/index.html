@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO - Onboarding</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#eebd2b",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221d10",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(34, 29, 16, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Subtle Ken Burns Effect */
+        @keyframes subtle-zoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .animate-subtle-zoom {
+            animation: subtle-zoom 20s ease-out infinite alternate;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white overflow-hidden selection:bg-primary selection:text-background-dark">
+<div class="relative min-h-screen w-full flex flex-col items-center justify-between overflow-hidden">
+<!-- Background Image with Blur & Overlay -->
+<div class="absolute inset-0 z-0 w-full h-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center animate-subtle-zoom opacity-60" data-alt="Blurred close up of a luxurious leather journal texture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAThxfeajyhBx8FUdhs3grcHhnCJ9S5PpAVp171kkWOqAm6Jc3cSrLg4Kd9-L6yIKPF5Rek0Z7_8LjHAt_kwDm-ueSWpgyffoe_971FJ522rR2y0iD-5zgrIJ9MaOg-HJqrEDf-xhRXYnGZCo9Y8BXgayQM9mvQfued1b4Xk7CiiReG-shAbE3285vnVq2nJqq3gV23lvUFiQ_Te5YyWLqLxDRAeKTu0BDjxjXgmli972rRNLMU2eOGmpF2E80t1k-rlFJjT8WcI4Y");'></div>
+<!-- Gradient Overlay for Readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/30 via-background-dark/60 to-background-dark/95"></div>
+</div>
+<!-- Header -->
+<header class="relative z-10 w-full pt-14 px-6 flex justify-center items-center opacity-0 animate-[fadeIn_1s_ease-out_0.5s_forwards]">
+<div class="tracking-[0.2em] text-xs font-bold uppercase text-white/80">IVYCO</div>
+</header>
+<!-- Main Content Area -->
+<main class="relative z-10 flex-1 flex flex-col items-center justify-end w-full max-w-md px-6 pb-12 gap-8">
+<!-- Hero Text Section -->
+<div class="w-full flex flex-col items-center text-center gap-4 opacity-0 animate-[fadeInUp_1s_ease-out_0.8s_forwards]">
+<div class="w-16 h-1 bg-primary/30 rounded-full mb-4"></div>
+<h1 class="text-4xl md:text-5xl font-light tracking-tight text-white leading-[1.1]">
+                    Comienza <br/> <span class="font-medium text-primary">tu Ritual</span>
+</h1>
+<p class="text-white/70 text-base md:text-lg font-normal leading-relaxed max-w-[300px]">
+                    Discover hair care tailored to your unique biology and lifestyle.
+                </p>
+</div>
+<!-- Spacer -->
+<div class="h-4"></div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col gap-4 items-center opacity-0 animate-[fadeInUp_1s_ease-out_1.1s_forwards]">
+<!-- Primary CTA -->
+<button class="group relative w-full h-14 bg-primary rounded-full flex items-center justify-center overflow-hidden transition-all duration-300 active:scale-[0.98] shadow-[0_0_20px_rgba(238,189,43,0.15)] hover:shadow-[0_0_30px_rgba(238,189,43,0.25)]">
+<span class="relative z-10 text-background-dark text-[15px] font-bold tracking-wide uppercase flex items-center gap-2">
+                        Personalizar mi Experiencia
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+</button>
+<!-- Secondary CTA -->
+<button class="group w-full h-12 bg-transparent rounded-full flex items-center justify-center text-white/60 hover:text-white transition-colors duration-300">
+<span class="text-sm font-medium tracking-wide border-b border-transparent group-hover:border-white/40 pb-0.5 transition-all">
+                        Explorar el catálogo
+                    </span>
+</button>
+</div>
+<!-- Pagination Dots -->
+<div class="flex gap-2 mt-4 opacity-0 animate-[fadeIn_1s_ease-out_1.4s_forwards]">
+<div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+<div class="w-6 h-1.5 rounded-full bg-primary"></div>
+</div>
+</main>
+<!-- Decorative Bottom Glow -->
+<div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-primary/5 to-transparent pointer-events-none z-0"></div>
+</div>
+<!-- Animation Keyframes needed for the inline styles to work without JS -->
+<style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+    </style>
+</body></html>

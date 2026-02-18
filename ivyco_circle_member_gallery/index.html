@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ivyco Circle Member Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                        "charcoal": "#2D2D2D",
+                        "zinc-dark": "#1A1A1A",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Serif", "sans-serif"], // Enforcing serif as requested for the main aesthetic
+                    },
+                    backgroundImage: {
+                        'grain': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hide for horizontal scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-x-hidden">
+<div class="relative flex flex-col min-h-screen w-full max-w-md mx-auto bg-zinc-dark text-[#e5e5e5] shadow-2xl overflow-hidden">
+<!-- Subtle Noise Texture Overlay -->
+<div class="absolute inset-0 z-0 pointer-events-none bg-grain opacity-20 mix-blend-overlay"></div>
+<!-- Header -->
+<header class="relative z-10 pt-12 pb-4 px-6 bg-gradient-to-b from-zinc-dark via-zinc-dark/95 to-transparent">
+<div class="flex items-center justify-between mb-4">
+<button class="p-2 -ml-2 text-primary hover:bg-white/5 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="flex gap-4">
+<button class="p-2 text-white/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button class="p-2 text-white/60 hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+</div>
+</div>
+<div class="text-center space-y-1">
+<p class="text-[10px] uppercase tracking-[0.2em] text-primary/80 font-medium">Exclusive Members Only</p>
+<h1 class="text-3xl font-light italic tracking-tight text-white/90">Ivyco Circle: <span class="font-normal not-italic">El Reflejo</span></h1>
+<div class="w-12 h-[1px] bg-primary/40 mx-auto mt-4"></div>
+</div>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="relative z-10 flex-1 overflow-y-auto pb-24 px-4 space-y-8">
+<!-- Intro Text -->
+<div class="text-center px-6">
+<p class="text-sm font-light text-white/60 leading-relaxed">
+                    A curated collection of silence and strength. Discover how our members wear their confidence in daily rituals.
+                </p>
+</div>
+<!-- Mosaic Gallery -->
+<div class="columns-2 gap-3 space-y-3">
+<!-- Item 1 -->
+<div class="group relative break-inside-avoid overflow-hidden rounded-lg bg-charcoal">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+<img alt="High contrast black and white portrait of a woman with curly hair" class="w-full h-auto object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmoKpZ7go2-KZiXuoW9JhVZA3md0RSY-q7MojrtmVzaZGrOD5qq-Br53p-neIIbobMnOiKy-TEmq4XO5mQKj5iGkFZnAWKNOeqY_0OgwGwi_894MHym6tl6ZjUbr-i3EK-knz-Anp_h1bpb1atSKN6glMUxAFe4GnJlSJcfHhBbkqfBef6u2kSTsEI4id07wS8DRyQIjRiMaou897fjUHkbbfWi-fqt0_q3lPhxGl8f8N4CMzC85BRXnlqPEGvwhEo3crinBElRdk"/>
+<div class="absolute inset-0 border-[0.5px] border-primary/0 group-hover:border-primary/100 transition-all duration-300 z-20 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-gradient-to-t from-black/90 to-transparent">
+<p class="text-[10px] text-primary tracking-widest uppercase">Ana S.</p>
+<p class="text-xs text-white font-light italic">Morning Ritual</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group relative break-inside-avoid overflow-hidden rounded-lg bg-charcoal">
+<img alt="Abstract artistic shot of hair texture and light" class="w-full h-64 object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIAORHWPxdUHCv0YVBJ9Mve2NoYI4V9sylNR-UJqNXA5uF_2MhOxdrw29vtIfwc26YNsfh_bsRcnmohOihZTHWREZAipzOJKT4f43ezP8t_3kyFMs-vQJA5NeaB4ygZzLBQD-1ZVUXyn0jABWBNxpDtlF2jmbzDncNU3x_ZfH_pwowLM5D5jrM4RG0-K8Az2K-CnFhp3OONE27bWoVRmDp0bT6cqt0T9sE0u0ITTBJuRp2K8T_5UYFnIkOjtFQ6NUn0ZBu4XuAv4k"/>
+<div class="absolute inset-0 border-[0.5px] border-primary/0 group-hover:border-primary/100 transition-all duration-300 z-20 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-gradient-to-t from-black/90 to-transparent">
+<p class="text-[10px] text-primary tracking-widest uppercase">Elena R.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group relative break-inside-avoid overflow-hidden rounded-lg bg-charcoal">
+<img alt="Black and white fashion shot of woman looking away" class="w-full h-40 object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3KKuOLb8uZ0F99DuZj0_26As189gK0IkiS9NZUxEf4WHR7SFs4qlGVmvEtf5uCj2t-L7Fy1UleP5M163h7x6SgZUz-BNXyDN1bar1sUcEB9IW-X3h5CEFnlY2cEDvjWtdpywAeL4ghvU1wYFJehANhQJgBigm6qGq_tkwMXWWtHTux-rVWja81KsTdCUA-Sme5yB6LWYPe7qiZVayKets02UdmU7yq3dyjQiDxe84e44MmWY-fUsnfy8DbwT-XEzoxNnaoHNcpYA"/>
+<div class="absolute inset-0 border-[0.5px] border-primary/0 group-hover:border-primary/100 transition-all duration-300 z-20 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-gradient-to-t from-black/90 to-transparent">
+<p class="text-[10px] text-primary tracking-widest uppercase">Sofia M.</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group relative break-inside-avoid overflow-hidden rounded-lg bg-charcoal">
+<img alt="Close up of hair product bottle with artistic lighting" class="w-full h-56 object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeDpZBXjHfoNfjAkWxpoKD3G_gcb3MWqWnVdQskJnOEodeE5aJn9LgAwjC1aP2nVvOx6VuthQ3orUw9wvLKvyqUf2dPXhhZUaVDQF0XH0aiiDgV4LpUcExauHfBVsyCtZwurdenEjYJLJGz9irGDrAoEZCQZxak63QPG3Q2IByxHiYWr-1vMpcuv_LEkrtdedn3ue237ooAM22Xv5Xvg98AcvaYxIZGpyh1rvrTtSSMgTY4yPIqZdNxdoJYRZyle8JKgPfzGRmmDI"/>
+<div class="absolute top-2 right-2 z-20">
+<span class="material-symbols-outlined text-white text-lg drop-shadow-md">star</span>
+</div>
+<div class="absolute inset-0 border-[0.5px] border-primary/0 group-hover:border-primary/100 transition-all duration-300 z-20 pointer-events-none"></div>
+</div>
+<!-- Item 5 -->
+<div class="group relative break-inside-avoid overflow-hidden rounded-lg bg-charcoal">
+<img alt="Artistic silhouette of a person against a window" class="w-full h-auto object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpCwjSYR3aCFD0RQGQY_yKR8P1IEtFKWf0gl7nPkJfT7NZczWCx9orMDfKXEShuWYXJcwi1BxZEtf-WbMS0D8_U2zHL8oxYgWcjVbTjN4pGhQGLdre-xQj-2_GwYm3Sa81F1oPPKjiRYchmJW0KbBBH8SQW6Em-sv76m62osO_u6TIxklXzIqlRqYDp4cS-Kjvi9LsksaHKgKL7R4np8GPnHTjJbs5u-jmPnpkWLHWtcXrVP1za_CBM5uBptwoAKS0zEFHPdZg_p0"/>
+<div class="absolute inset-0 border-[0.5px] border-primary/0 group-hover:border-primary/100 transition-all duration-300 z-20 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-gradient-to-t from-black/90 to-transparent">
+<p class="text-[10px] text-primary tracking-widest uppercase">Camila D.</p>
+<p class="text-xs text-white font-light italic">The Serum</p>
+</div>
+</div>
+</div>
+<!-- Section Divider -->
+<div class="flex items-center gap-4 py-4 opacity-50">
+<div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+<span class="material-symbols-outlined text-primary/60 text-sm">diamond</span>
+<div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+</div>
+<!-- Testimonials: Historias de Ritual -->
+<section class="space-y-4">
+<div class="flex justify-between items-end px-2">
+<h2 class="text-xl font-light text-white/90">Historias de Ritual</h2>
+<a class="text-[10px] text-primary tracking-wider uppercase hover:underline" href="#">Ver todo</a>
+</div>
+<div class="flex overflow-x-auto gap-4 pb-4 px-2 no-scrollbar snap-x snap-mandatory">
+<!-- Card 1 -->
+<div class="snap-center shrink-0 w-[280px] bg-[#232323] border border-white/5 p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary/20 group-hover:bg-primary transition-colors"></div>
+<span class="material-symbols-outlined text-4xl text-white/5 absolute top-4 right-4">format_quote</span>
+<p class="text-sm italic text-white/80 leading-relaxed mb-4">
+                            "The quiet confidence of a morning routine is my armor. Ivyco isn't just a product; it's the moment I choose myself."
+                        </p>
+<div class="flex items-center gap-3 mt-auto">
+<div class="w-8 h-8 rounded-full bg-zinc-600 overflow-hidden">
+<img alt="Profile of Maria" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdKhriQEA403UUB5HZkmALM3J8mhpN8gkBWm0aLrPuZxOvchqubPpd7HfY0NozSXakhhVsVIt0I60j83AnZyoLQCEESVpftWvr2uFQ86uEOBUfYmrQIGTlVr99n0kOZ3592xuSU1j69PsB8upgF7y8GN1RvVscLTwuwoj-h4Gjq4rx-8QrSbop9M3-NXoj0KtzEpwP7phsHDck9HWvZXTLhIqJd1xbQcs56fugQO36nADKMcqOzeAVjPR64M1Sdzyr73WXhfAW3-0"/>
+</div>
+<div>
+<p class="text-xs font-medium text-white">Maria G.</p>
+<p class="text-[10px] text-white/40 uppercase tracking-wide">Member since '22</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="snap-center shrink-0 w-[280px] bg-[#232323] border border-white/5 p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary/20 group-hover:bg-primary transition-colors"></div>
+<span class="material-symbols-outlined text-4xl text-white/5 absolute top-4 right-4">format_quote</span>
+<p class="text-sm italic text-white/80 leading-relaxed mb-4">
+                            "Finding beauty in the stillness. The texture, the scent—it brings me back to center."
+                        </p>
+<div class="flex items-center gap-3 mt-auto">
+<div class="w-8 h-8 rounded-full bg-zinc-600 overflow-hidden">
+<img alt="Profile of Carlos" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX5gGXMSuelq8NtvP5rZsWgsZWe4nSnpsfvIVWBO1vnhKJiMy_LY0H4FNni-rk3hgFHbQq3KxZWj3KL4qCoJ8k369YWoQLDWzQpxa15Y5QrwoK3d-q4MSW0nQrN-SXqXsRN_JRtWDEtdIqJhkAq_0vvVAkE9Ph4zablDMw_hup4QpoKt5DWTKTT9-AZA6Rf8nqcrk3ej1X4Stlg-4f-BR_eepjcedxcEh08HuSx4qtLEu-Jur4KUHiF0K9Moz-AZ8U5emqJMhfG_Q"/>
+</div>
+<div>
+<p class="text-xs font-medium text-white">Carlos V.</p>
+<p class="text-[10px] text-white/40 uppercase tracking-wide">Member since '23</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button -->
+<div class="absolute bottom-20 left-1/2 -translate-x-1/2 z-30">
+<button class="group flex items-center gap-3 bg-zinc-800/80 hover:bg-zinc-700 text-white backdrop-blur-md border border-primary/30 px-6 py-3 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all active:scale-95">
+<span class="material-symbols-outlined text-primary group-hover:rotate-90 transition-transform">add</span>
+<span class="text-xs font-medium tracking-wide uppercase text-primary">Compartir mi Ritual</span>
+</button>
+</div>
+<!-- Bottom Nav Bar (Translucent) -->
+<div class="absolute bottom-0 w-full z-40">
+<div class="flex border-t border-white/5 bg-zinc-900/90 backdrop-blur-lg px-6 pb-6 pt-3 justify-between items-center">
+<a class="flex flex-col items-center justify-center gap-1 text-white/40 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-0.5 transition-transform">home</span>
+<span class="text-[9px] font-medium uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-white/40 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-0.5 transition-transform">shopping_bag</span>
+<span class="text-[9px] font-medium uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary relative" href="#">
+<div class="absolute -top-10 bg-gradient-to-t from-primary/20 to-transparent w-12 h-12 rounded-full blur-xl"></div>
+<span class="material-symbols-outlined text-2xl fill-current">camera</span>
+<span class="w-1 h-1 bg-primary rounded-full mt-1"></span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-white/40 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-0.5 transition-transform">spa</span>
+<span class="text-[9px] font-medium uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-1">Ritual</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-white/40 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-0.5 transition-transform">person</span>
+<span class="text-[9px] font-medium uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-1">Profile</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

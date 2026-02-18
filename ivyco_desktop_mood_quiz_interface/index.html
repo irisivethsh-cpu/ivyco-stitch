@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IVYCO Mood Quiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#19b34d",
+                "primary-dark": "#148f3d",
+                "background-light": "#f6f8f6",
+                "background-dark": "#112117",
+                "stone-100": "#f5f5f4",
+                "stone-200": "#e7e5e4",
+                "stone-800": "#292524",
+                "stone-900": "#1c1917",
+              },
+              fontFamily: {
+                "display": ["Newsreader", "serif"],
+                "sans": ["Noto Sans", "sans-serif"],
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+              boxShadow: {
+                'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        /* Custom radio styling for silent luxury feel */
+        .radio-option:checked + div {
+            background-color: #1c1917; /* Matte black */
+            color: #ffffff;
+            border-color: #1c1917;
+        }
+        .radio-option:checked + div .check-icon {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col items-center justify-center p-4 antialiased text-stone-900 dark:text-stone-100">
+<!-- Main Container - Mimicking a floating card on desktop, spanning mostly on mobile -->
+<main class="w-full max-w-md bg-white dark:bg-[#1a2e22] rounded-2xl shadow-soft overflow-hidden relative border border-stone-200 dark:border-[#2a4535]">
+<!-- Header Section -->
+<header class="flex items-center justify-between p-6 pb-2">
+<button class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors p-2 -ml-2 rounded-full hover:bg-stone-100 dark:hover:bg-[#2a4535]">
+<span class="material-symbols-outlined !text-xl">arrow_back</span>
+</button>
+<h2 class="text-xl font-bold tracking-widest text-center flex-1 font-display uppercase text-stone-900 dark:text-white">IVYCO</h2>
+<button class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors p-2 -mr-2 rounded-full hover:bg-stone-100 dark:hover:bg-[#2a4535]">
+<span class="material-symbols-outlined !text-xl">close</span>
+</button>
+</header>
+<!-- Progress Indicator -->
+<div class="px-8 py-2 flex flex-col gap-2">
+<div class="flex justify-between items-end">
+<span class="text-[10px] uppercase tracking-[0.2em] font-sans font-medium text-stone-500 dark:text-stone-400">Paso 1 de 2</span>
+</div>
+<div class="h-[2px] w-full bg-stone-200 dark:bg-[#2a4535] rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/2 rounded-full"></div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="px-6 pt-8 pb-10 flex flex-col items-center">
+<!-- Question -->
+<h1 class="text-3xl md:text-4xl font-display font-medium text-center leading-tight mb-2 text-stone-900 dark:text-stone-50">
+                ¿Cuál es tu prioridad hoy?
+            </h1>
+<p class="text-center text-stone-500 dark:text-stone-400 text-sm font-sans mb-10 max-w-[280px]">
+                Selecciona el objetivo principal para tu rutina de cuidado personal.
+            </p>
+<!-- Options -->
+<form class="w-full flex flex-col gap-4">
+<!-- Option 1 -->
+<label class="group cursor-pointer relative w-full">
+<input class="radio-option sr-only peer" name="mood" type="radio" value="shine"/>
+<div class="w-full p-5 rounded-lg border border-stone-200 dark:border-[#2a4535] bg-white dark:bg-[#1a2e22] hover:border-stone-800 dark:hover:border-primary transition-all duration-300 flex items-center justify-between group-hover:bg-stone-50 dark:group-hover:bg-[#233b2c]">
+<span class="font-display text-lg font-medium tracking-wide">Brillo Natural</span>
+<span class="check-icon material-symbols-outlined opacity-0 scale-75 transition-all duration-300">check_circle</span>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="group cursor-pointer relative w-full">
+<input class="radio-option sr-only peer" name="mood" type="radio" value="volume"/>
+<div class="w-full p-5 rounded-lg border border-stone-200 dark:border-[#2a4535] bg-white dark:bg-[#1a2e22] hover:border-stone-800 dark:hover:border-primary transition-all duration-300 flex items-center justify-between group-hover:bg-stone-50 dark:group-hover:bg-[#233b2c]">
+<span class="font-display text-lg font-medium tracking-wide">Volumen Intenso</span>
+<span class="check-icon material-symbols-outlined opacity-0 scale-75 transition-all duration-300">check_circle</span>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="group cursor-pointer relative w-full">
+<input class="radio-option sr-only peer" name="mood" type="radio" value="care"/>
+<div class="w-full p-5 rounded-lg border border-stone-200 dark:border-[#2a4535] bg-white dark:bg-[#1a2e22] hover:border-stone-800 dark:hover:border-primary transition-all duration-300 flex items-center justify-between group-hover:bg-stone-50 dark:group-hover:bg-[#233b2c]">
+<span class="font-display text-lg font-medium tracking-wide">Cuidado Profundo</span>
+<span class="check-icon material-symbols-outlined opacity-0 scale-75 transition-all duration-300">check_circle</span>
+</div>
+</label>
+</form>
+<!-- Action Button -->
+<div class="w-full mt-10">
+<button class="w-full h-14 bg-stone-900 dark:bg-primary hover:bg-primary dark:hover:bg-primary-dark text-white rounded-lg font-sans text-sm font-bold tracking-widest uppercase transition-colors duration-300 flex items-center justify-center gap-2 group">
+<span>Siguiente</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Decorative subtle footer gradient/element -->
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-20"></div>
+</main>
+<!-- Background Elements for Atmosphere -->
+<div class="fixed top-[-10%] right-[-10%] w-[50vh] h-[50vh] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
+<div class="fixed bottom-[-10%] left-[-10%] w-[40vh] h-[40vh] rounded-full bg-primary/5 blur-[100px] pointer-events-none"></div>
+</body></html>
