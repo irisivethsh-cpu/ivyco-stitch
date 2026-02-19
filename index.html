@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IVYCO — Digital Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --ivory: #faf7f2; --gold: #b08d57; --onyx: #1a1a1a; }
+      html, body { height: 100%; background: var(--ivory); color: var(--onyx); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      .font-editorial { font-family: "Playfair Display", ui-serif, Georgia, serif; }
+      .noise { pointer-events: none; position: fixed; inset: 0; opacity: 0.06; mix-blend-mode: multiply; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E"); background-size: 260px 260px; }
+      .gold-ring { box-shadow: 0 0 0 1px rgba(176,141,87,0.55), 0 10px 30px rgba(26,26,26,0.08); }
+      .glass { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.26); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+      .glass-strong { background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.28); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); }
+      .focus-gold:focus { outline: none; box-shadow: 0 0 0 3px rgba(176,141,87,0.35); }
+    </style>
+    <script>
+      tailwind.config = { theme: { extend: { colors: { ivory: "#faf7f2", gold: "#b08d57", onyx: "#1a1a1a" } } } };
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <div class="noise"></div>
+    <div class="fixed inset-0 -z-10" aria-hidden="true">
+      <div class="absolute -top-32 -left-32 h-[520px] w-[520px] rounded-full blur-3xl" style="background:radial-gradient(circle at 30% 30%,rgba(176,141,87,0.22),rgba(176,141,87,0.0) 60%);"></div>
+      <div class="absolute -bottom-40 -right-40 h-[620px] w-[620px] rounded-full blur-3xl" style="background:radial-gradient(circle at 60% 60%,rgba(26,26,26,0.10),rgba(26,26,26,0.0) 62%);"></div>
+    </div>
+
+    <div class="w-full">
+      <div class="mx-auto max-w-[1500px] px-5 md:px-8 lg:px-10">
+
+        <!-- Header -->
+        <header class="pt-6 md:pt-8">
+          <div class="glass-strong gold-ring rounded-2xl px-5 py-4 md:px-6 md:py-5">
+            <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+              <div class="flex items-baseline justify-between md:justify-start">
+                <a href="./index.html.html" class="font-editorial text-2xl md:text-3xl" style="letter-spacing:0.18em;">IVYCO</a>
+                <div class="md:hidden">
+                  <button id="menuBtn" class="glass rounded-xl px-3 py-2 text-sm font-medium transition duration-500 hover:translate-y-[-1px]" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+                </div>
+              </div>
+              <nav id="desktopNav" class="hidden md:flex md:items-center md:gap-6">
+                <a class="text-sm tracking-[0.18em] uppercase opacity-80 transition duration-500 hover:opacity-100" href="#experiences">Shop</a>
+                <a class="text-sm tracking-[0.18em] uppercase opacity-80 transition duration-500 hover:opacity-100" href="#rituals">Rituals</a>
+                <a class="text-sm tracking-[0.18em] uppercase opacity-80 transition duration-500 hover:opacity-100" href="#journal">Journal</a>
+                <a class="text-sm tracking-[0.18em] uppercase opacity-80 transition duration-500 hover:opacity-100" href="#account">Account</a>
+                <button type="button" id="openChatTop" class="glass gold-ring rounded-xl px-4 py-2 text-sm tracking-[0.14em] uppercase transition duration-500 hover:translate-y-[-1px]">AI Concierge</button>
+              </nav>
+            </div>
+            <div id="mobileNav" class="hidden pt-4 md:hidden">
+              <div class="grid gap-2">
+                <a class="glass rounded-xl px-4 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-1px]" href="#experiences">Shop</a>
+                <a class="glass rounded-xl px-4 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-1px]" href="#rituals">Rituals</a>
+                <a class="glass rounded-xl px-4 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-1px]" href="#journal">Journal</a>
+                <a class="glass rounded-xl px-4 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-1px]" href="#account">Account</a>
+                <button type="button" id="openChatMobile" class="glass gold-ring rounded-xl px-4 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-1px] text-left">AI Concierge</button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="mt-8 md:mt-10">
+          <div class="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+            <div class="glass-strong gold-ring rounded-3xl p-6 md:p-10">
+              <div class="flex h-full flex-col justify-between gap-8">
+                <div>
+                  <p class="text-xs tracking-[0.28em] uppercase opacity-70">Luxury Beauty &bull; Digital Ecosystem</p>
+                  <h1 class="font-editorial mt-4 text-4xl leading-[1.05] md:text-5xl lg:text-6xl">The future of beauty, <span style="color:var(--gold);">curated</span> like couture.</h1>
+                  <p class="mt-5 max-w-[62ch] text-base leading-relaxed opacity-80 md:text-lg">IVYCO is not a catalog of files &mdash; it's a premium suite of experiences: mood intelligence, rituals, and an AI concierge designed to elevate your routine into a signature.</p>
+                </div>
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <a href="#experiences" class="gold-ring glass rounded-2xl px-6 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-2px]">Explore Experiences</a>
+                  <button type="button" id="openChatHero" class="glass rounded-2xl px-6 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-2px]">Talk to AI Concierge</button>
+                </div>
+                <div class="grid gap-3 md:grid-cols-3">
+                  <div class="glass rounded-2xl px-5 py-4"><p class="text-xs tracking-[0.22em] uppercase opacity-70">Mood</p><p class="mt-1 text-sm opacity-80">Find your IVY energy</p></div>
+                  <div class="glass rounded-2xl px-5 py-4"><p class="text-xs tracking-[0.22em] uppercase opacity-70">Ritual</p><p class="mt-1 text-sm opacity-80">Guided luxury routines</p></div>
+                  <div class="glass rounded-2xl px-5 py-4"><p class="text-xs tracking-[0.22em] uppercase opacity-70">Concierge</p><p class="mt-1 text-sm opacity-80">Instant recommendations</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="glass-strong gold-ring rounded-3xl overflow-hidden min-h-[420px] lg:min-h-[560px]">
+              <iframe title="IVYCO 3D" src="https://my.spline.design/glasscircles-6453724c9c2f6d2036746864d422a55a/" frameborder="0" width="100%" height="100%" class="h-full w-full" loading="lazy"></iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experiences Grid -->
+        <section id="experiences" class="mt-10 md:mt-12">
+          <div class="flex items-end justify-between gap-6">
+            <div>
+              <p class="text-xs tracking-[0.28em] uppercase opacity-70">Digital Experiences</p>
+              <h2 class="font-editorial mt-2 text-3xl md:text-4xl">Modules, not products.</h2>
+            </div>
+            <p class="hidden md:block max-w-[52ch] text-sm opacity-70">These are connected experiences from your project folders. Each card routes to a real subpath.</p>
+          </div>
+
+          <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+            <a href="beauty_tech__heat_tool_specs/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Spec Sheet</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Beauty Tech Heat Tool</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Premium heat tool specifications and technology overview.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="desktop_mood_results__side-by-side_recommendations/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Mood Results</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Side-By-Side Recommendations</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Discover your IVY profile and receive curated recommendations.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="desktop_ritual_guide__side-by-side_detail/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70" id="rituals">Ritual Guide</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Guided Rituals</h3><p class="mt-3 text-sm leading-relaxed opacity-80">A premium, step-by-step routine designed for desktop.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="generated_screen_1/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Generated</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Generated Screen 1</h3><p class="mt-3 text-sm leading-relaxed opacity-80">An experimental generated interface experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="generated_screen_2/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Generated</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Generated Screen 2</h3><p class="mt-3 text-sm leading-relaxed opacity-80">An experimental generated interface experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="generated_screen_3/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Generated</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Generated Screen 3</h3><p class="mt-3 text-sm leading-relaxed opacity-80">An experimental generated interface experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_animated_blueprint_detail/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Blueprint</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Animated Blueprint</h3><p class="mt-3 text-sm leading-relaxed opacity-80">An intricate animated blueprint detail experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_animated_desktop_experience/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Desktop UX</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Animated Desktop</h3><p class="mt-3 text-sm leading-relaxed opacity-80">A fully animated desktop experience for IVYCO.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_circle_member_gallery/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Community</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Circle Member Gallery</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Explore the IVYCO inner circle member gallery.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_desktop_mood_quiz_interface/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Quiz Interface</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Mood Quiz Interface</h3><p class="mt-3 text-sm leading-relaxed opacity-80">The desktop mood quiz interactive interface.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_home_experience_1/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Experimental</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Home Experience 1</h3><p class="mt-3 text-sm leading-relaxed opacity-80">First immersive home experience experiment.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_home_experience_2/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Experimental</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Home Experience 2</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Second immersive home experience experiment.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_mornings_playlist/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Audio</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Mornings Playlist</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Your curated morning soundtrack for the ritual.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivyco_private_drop/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Exclusive</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Private Drop</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Access the exclusive private product drop experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="ivy_concierge_advice/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Service</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Ivy Concierge Advice</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Personalized concierge beauty advice and guidance.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="journal__el_peso_de_un_parpadeo/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70" id="journal">Journal</p><h3 class="font-editorial mt-2 text-2xl leading-tight">El Peso De Un Parpadeo</h3><p class="mt-3 text-sm leading-relaxed opacity-80">A quiet luxury editorial &mdash; the weight of a blink.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="mobile_navigation_menu/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Mobile UI</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Mobile Navigation</h3><p class="mt-3 text-sm leading-relaxed opacity-80">The refined mobile navigation menu experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="mood_quiz_results__power/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Results</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Results &mdash; Power</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Mood quiz power results with bold recommendations.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="mood_quiz_results__soft/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Results</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Results &mdash; Soft</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Mood quiz soft results with gentle recommendations.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="onboarding__our_philosophy/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Onboarding</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Our Philosophy</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Discover the values and vision behind IVYCO.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="onboarding__start_your_ritual/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Onboarding</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Start Your Ritual</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Begin your personalized IVYCO beauty ritual.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="onboarding__welcome_to_ivyco/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Onboarding</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Welcome to IVYCO</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Your first step into the IVYCO universe.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="order_tracking_ritual/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Post Purchase</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Order Tracking Ritual</h3><p class="mt-3 text-sm leading-relaxed opacity-80">An elevated post-purchase tracking experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="product_ritual__fluffy_dd_lashes/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Shop</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Fluffy DD Lashes</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Product ritual for the iconic Fluffy DD Lashes.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="product_ritual__heat_tool/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Shop</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Heat Tool Ritual</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Product ritual for the premium IVYCO heat tool.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="referral__secret_gift_experience/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Referral</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Secret Gift Experience</h3><p class="mt-3 text-sm leading-relaxed opacity-80">The referral secret gift unboxing journey.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="secret_drop_invitation/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Invitation</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Secret Drop Invitation</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Exclusive invitation to the next private IVYCO drop.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="secure_payment_ritual/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Checkout</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Secure Payment Ritual</h3><p class="mt-3 text-sm leading-relaxed opacity-80">A refined, trust-first checkout experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="the_ivyco_journal/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Editorial</p><h3 class="font-editorial mt-2 text-2xl leading-tight">The Journal</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Stories, launches, and quiet luxury notes.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="the_ivy_mood_quiz/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Interact</p><h3 class="font-editorial mt-2 text-2xl leading-tight">The Ivy Mood Quiz</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Find your IVY energy with the signature mood quiz.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="unboxing_ritual_confirmation/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Experience</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Unboxing Ritual</h3><p class="mt-3 text-sm leading-relaxed opacity-80">The ceremonial unboxing confirmation experience.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <a href="user_profile_&_mood_history/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70" id="account">Account</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Profile &amp; Mood History</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Your personal IVYCO profile and mood journey history.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+            <button type="button" id="openChatCard" class="text-left group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">AI Concierge</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Ask IVYCO</h3><p class="mt-3 text-sm leading-relaxed opacity-80">A sleek, minimalist assistant for product guidance, rituals, and next steps.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open Chat</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8599;</span></div></button>
+
+            <a href="your_ivyco_bag/index.html" class="group glass-strong gold-ring rounded-3xl p-6 transition duration-500 hover:translate-y-[-6px]"><p class="text-xs tracking-[0.26em] uppercase opacity-70">Commerce</p><h3 class="font-editorial mt-2 text-2xl leading-tight">Your Bag</h3><p class="mt-3 text-sm leading-relaxed opacity-80">Review and manage your IVYCO selections.</p><div class="mt-6 flex items-center justify-between"><span class="text-xs tracking-[0.22em] uppercase" style="color:var(--gold)">Open</span><span class="text-sm opacity-70 transition duration-500 group-hover:opacity-100">&#8594;</span></div></a>
+
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 pb-16 md:pb-20">
+          <div class="glass-strong gold-ring rounded-2xl px-6 py-5 md:px-8 md:py-6">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <p class="text-sm opacity-70">&copy; <span id="year"></span> IVYCO. Luxury beauty, engineered.</p>
+              <div class="flex flex-wrap items-center gap-3">
+                <a class="text-xs tracking-[0.22em] uppercase opacity-70 transition duration-500 hover:opacity-100" href="#experiences">Experiences</a>
+                <button type="button" id="openChatFooter" class="text-xs tracking-[0.22em] uppercase transition duration-500 hover:translate-y-[-1px]" style="color:var(--gold)">AI Concierge</button>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <button id="chatFab" class="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full glass gold-ring transition duration-500 hover:translate-y-[-3px] flex items-center justify-center" aria-label="Open AI Concierge" title="AI Concierge">
+      <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">&#10022;</span>
+    </button>
+
+    <!-- Chat Panel -->
+    <div id="chatPanel" class="fixed bottom-24 right-6 z-50 hidden w-[92vw] max-w-[420px] rounded-3xl glass-strong gold-ring overflow-hidden" role="dialog" aria-modal="true" aria-label="AI Concierge Chat">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-white/20">
+        <div>
+          <p class="text-xs tracking-[0.26em] uppercase opacity-70">AI Concierge</p>
+          <p class="font-editorial text-lg">IVYCO Assistant</p>
+        </div>
+        <button id="closeChat" class="glass rounded-xl px-3 py-2 text-sm transition duration-500 hover:translate-y-[-1px]">Close</button>
+      </div>
+      <div id="chatBody" class="px-5 py-4 space-y-3 max-h-[52vh] overflow-auto">
+        <div class="glass rounded-2xl p-4">
+          <p class="text-sm opacity-80">Hi. Tell me what you want to do today: <span style="color:var(--gold)">Mood quiz</span>, <span style="color:var(--gold)">ritual</span>, or <span style="color:var(--gold)">product help</span>.</p>
+        </div>
+      </div>
+      <form id="chatForm" class="p-4 border-t border-white/20">
+        <div class="flex gap-3">
+          <input id="chatInput" type="text" class="w-full glass rounded-2xl px-4 py-3 text-sm opacity-90 placeholder:opacity-60 focus-gold" placeholder="Type your message..." autocomplete="off" />
+          <button class="gold-ring glass rounded-2xl px-4 py-3 text-sm tracking-[0.18em] uppercase transition duration-500 hover:translate-y-[-1px]" type="submit">Send</button>
+        </div>
+        <p class="mt-2 text-xs opacity-60">This is a UI shell. Connect it to your real bot endpoint when ready.</p>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      if (menuBtn && mobileNav) {
+        menuBtn.addEventListener("click", () => {
+          const isOpen = !mobileNav.classList.contains("hidden");
+          mobileNav.classList.toggle("hidden");
+          menuBtn.setAttribute("aria-expanded", String(!isOpen));
+        });
+      }
+      const chatPanel = document.getElementById("chatPanel");
+      const chatFab = document.getElementById("chatFab");
+      const closeChat = document.getElementById("closeChat");
+      function openChat() { chatPanel.classList.remove("hidden"); setTimeout(() => document.getElementById("chatInput")?.focus(), 50); }
+      function closeChatPanel() { chatPanel.classList.add("hidden"); }
+      chatFab.addEventListener("click", openChat);
+      closeChat.addEventListener("click", closeChatPanel);
+      ["openChatTop","openChatMobile","openChatHero","openChatCard","openChatFooter"].forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener("click", openChat);
+      });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeChatPanel(); });
+      const chatForm = document.getElementById("chatForm");
+      const chatInput = document.getElementById("chatInput");
+      const chatBody = document.getElementById("chatBody");
+      function addBubble(text, who = "user") {
+        const wrap = document.createElement("div");
+        wrap.className = who === "user" ? "flex justify-end" : "flex justify-start";
+        const bubble = document.createElement("div");
+        bubble.className = "max-w-[85%] rounded-2xl p-4 " + (who === "user" ? "glass gold-ring" : "glass");
+        bubble.innerHTML = '<p class="text-sm opacity-85"></p>';
+        bubble.querySelector("p").textContent = text;
+        wrap.appendChild(bubble);
+        chatBody.appendChild(wrap);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+      chatForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const msg = (chatInput.value || "").trim();
+        if (!msg) return;
+        addBubble(msg, "user");
+        chatInput.value = "";
+        setTimeout(() => {
+          let reply = "Noted. If you want this connected to a real AI bot, tell me: (1) do you use n8n, (2) what endpoint URL, and (3) what format you want (JSON).";
+          if (msg.toLowerCase().includes("mood")) reply = "Open the Mood Quiz card — it routes to your folder. Want me to add a results save-to-localStorage flow?";
+          if (msg.toLowerCase().includes("ritual")) reply = "Ritual Guide is ready. If the link 404s, send me the exact folder name and I'll align it.";
+          addBubble(reply, "ai");
+        }, 450);
+      });
+    </script>
+  </body>
+</html>
